@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="ASCII"?>
+<organization:Organization xmlns:organization="http://documentation.bonitasoft.com/organization-xml-schema/1.1">
+  <customUserInfoDefinitions/>
+  <users>
+    <user userName="leandro.vieiria">
+      <firstName>Leandro</firstName>
+      <lastName>Vieira</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+  </users>
+  <roles>
+    <role name="Role1">
+      <displayName>Member</displayName>
+    </role>
+  </roles>
+  <groups>
+    <group name="Empresa">
+      <displayName>Empresa</displayName>
+    </group>
+    <group name="Comissao do Sistema de Gestao" parentPath="/Empresa">
+      <displayName>Comiss&#xe3;o do Sistema de Gest&#xe3;o</displayName>
+      <description>Elaborar e aprovar este procedimento.</description>
+    </group>
+    <group name="Administracao" parentPath="/Empresa">
+      <displayName>Administra&#xe7;&#xe3;o</displayName>
+      <description>Endere&#xe7;ar, quando necess&#xe1;rio, as oportunidades de venda para as unidades de neg&#xf3;cio</description>
+    </group>
+    <group name="Gestor da Unidade de Negocio" parentPath="/Empresa">
+      <displayName>Gestor da Unidade de Neg&#xf3;cio</displayName>
+      <description>Atribui um gestor da OV &#xe0;s oportunidades de venda. &#xD;
+Aprova&#xe7;&#xe3;o das cota&#xe7;&#xf5;es/propostas. &#xD;
+Supervisionar a atividade dos gestores de cliente.</description>
+    </group>
+    <group name="Gestor da OV" parentPath="/Empresa">
+      <displayName>Gestor da OV</displayName>
+      <description>Respons&#xe1;vel pela oportunidade de venda, elabora&#xe7;&#xe3;o da Respons&#xe1;vel pela oportunidade de venda, elabora&#xe7;&#xe3;o da proposta, negocia&#xe7;&#xe3;o com o cliente e fecho do neg&#xf3;cio. Normalmente &#xe9; um gestor de cliente.</description>
+    </group>
+    <group name="area comercial" parentPath="/Empresa">
+      <displayName>Servi&#xe7;os de Apoio ao Neg&#xf3;cio (&#xe1;rea comercial)</displayName>
+      <description>Encaminhamento de oportunidades de venda que cheguem &#xe0; empresa. Cria&#xe7;&#xe3;o de clientes, abertura de oportunidades de venda, registo de propostas/cota&#xe7;&#xf5;es. </description>
+    </group>
+    <group name="area financeira" parentPath="/Empresa">
+      <displayName>Servi&#xe7;os de Apoio ao Neg&#xf3;cio (&#xe1;rea financeira)</displayName>
+      <description>Avalia&#xe7;&#xe3;o do Risco do cliente ou do potencial cliente.&#xD;
+Valida&#xe7;&#xe3;o das regras financeiras em vigor na empresa. Aprova&#xe7;&#xe3;o de propostas/cota&#xe7;&#xf5;es que n&#xe3;o cumpram as regras em vigor.</description>
+    </group>
+    <group name="Equipa Tecnica" parentPath="/Empresa">
+      <displayName>Equipa T&#xe9;cnica</displayName>
+      <description>Colaborar na conce&#xe7;&#xe3;o da melhor solu&#xe7;&#xe3;o para o cliente, nomeadamente na avalia&#xe7;&#xe3;o do n&#xfa;mero de dias necess&#xe1;rios e na calendariza&#xe7;&#xe3;o da implementa&#xe7;&#xe3;o. Participar na reuni&#xe3;o de passagem do projeto. </description>
+    </group>
+    <group name="area logistica" parentPath="/Empresa">
+      <displayName>Servi&#xe7;os de Apoio ao Neg&#xf3;cio (&#xe1;rea log&#xed;stica) </displayName>
+      <description>Dar seguimento &#xe0;s oportunidades de venda ap&#xf3;s adjudica&#xe7;&#xe3;o (aprovisionamento, rece&#xe7;&#xe3;o do produto e prepara&#xe7;&#xe3;o e entrega). </description>
+    </group>
+    <group name="Angariacao" parentPath="/Empresa">
+      <displayName>Angaria&#xe7;&#xe3;o</displayName>
+    </group>
+  </groups>
+  <memberships>
+    <membership>
+      <userName>leandro.vieiria</userName>
+      <roleName>Role1</roleName>
+      <groupName>Empresa</groupName>
+    </membership>
+    <membership>
+      <userName>leandro.vieiria</userName>
+      <roleName>Role1</roleName>
+      <groupName>Empresa</groupName>
+    </membership>
+  </memberships>
+</organization:Organization>

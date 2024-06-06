@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0">
+    <businessObjects>
+        <businessObject qualifiedName="com.company.model.OportunidaDeVenda">
+            <fields>
+                <field type="STRING" length="255" name="tipo_venda" nullable="false" collection="false">
+                    <description>Oportunidade de venda está associada a um tipo_venda</description>
+                </field>
+                <field type="STRING" length="255" name="cliente" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+    </businessObjects>
+</businessObjectModel>
