@@ -1,115 +1,12 @@
 {
-  "id" : "atribuirGestorOVForm",
-  "name" : "atribuirGestorOVForm",
+  "id" : "atribuicaoGestorVendaForm",
+  "name" : "atribuicaoGestorVendaForm",
   "type" : "form",
-  "uuid" : "695edb7e-b3cb-49db-8194-511cda800c56",
+  "uuid" : "30b62779-2e36-4c18-bd04-a9c124f7251d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718826512039,
+  "lastUpdate" : 1718826686559,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
-    [
-      {
-        "type" : "container",
-        "dimension" : {
-          "xs" : 12
-        },
-        "propertyValues" : { },
-        "reference" : "bdc31c23-663f-4140-a246-5a16731b3603",
-        "hasValidationError" : false,
-        "id" : "pbContainer",
-        "rows" : [
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "level" : {
-                  "type" : "constant",
-                  "value" : "Level 1"
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayName }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "center"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "49db14df-230f-4786-b906-bb4c5afcc174",
-              "hasValidationError" : false,
-              "id" : "pbTitle",
-              "description" : ""
-            }
-          ],
-          [
-            {
-              "type" : "component",
-              "dimension" : {
-                "md" : 12,
-                "sm" : 12,
-                "xs" : 12,
-                "lg" : 12
-              },
-              "propertyValues" : {
-                "allowHtml" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "labelHidden" : {
-                  "type" : "constant",
-                  "value" : true
-                },
-                "hidden" : {
-                  "type" : "constant",
-                  "value" : false
-                },
-                "cssClasses" : {
-                  "type" : "constant",
-                  "value" : ""
-                },
-                "label" : {
-                  "type" : "interpolation"
-                },
-                "text" : {
-                  "type" : "interpolation",
-                  "value" : "{{ task.displayDescription }}"
-                },
-                "alignment" : {
-                  "type" : "constant",
-                  "value" : "left"
-                },
-                "dimension" : {
-                  "type" : "constant",
-                  "value" : 12
-                }
-              },
-              "reference" : "f995d22c-3d1f-42c2-8c95-b50ba7055a7c",
-              "hasValidationError" : false,
-              "id" : "pbText",
-              "description" : ""
-            }
-          ]
-        ]
-      }
-    ],
     [
       {
         "type" : "formContainer",
@@ -117,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "73dd02bd-f554-495c-a013-5f6a0037ab37",
+        "reference" : "36b639f9-9cd5-40ab-a6a9-0ce8df5ffe08",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -126,7 +23,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "d9e48244-f691-4efc-9920-ed1a7084d420",
+          "reference" : "8144baa7-b2a4-43d7-a411-262bd3285c19",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -134,64 +31,40 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
                   "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
+                  "cssClasses" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 1
-                  },
-                  "readOnly" : {
+                  "allowHTML" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "label" : {
+                  "text" : {
                     "type" : "interpolation",
-                    "value" : "Gestor_ov"
+                    "value" : "Atribuicao Gestor Venda"
                   },
-                  "placeholder" : {
-                    "type" : "constant"
-                  },
-                  "type" : {
+                  "level" : {
                     "type" : "constant",
-                    "value" : "text"
+                    "value" : "Level 2"
                   },
-                  "dimension" : {
+                  "alignment" : {
                     "type" : "constant",
-                    "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.gestor_ov"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : true
+                    "value" : "center"
                   }
                 },
-                "reference" : "503606e9-3321-4769-8d50-a35e9ef0c1b6",
+                "reference" : "6b192034-802f-4ac3-8203-8cd38d29e0db",
                 "hasValidationError" : false,
-                "id" : "pbInput",
-                "description" : ""
+                "id" : "pbTitle"
               }
             ],
             [
@@ -221,7 +94,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Continuar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -248,7 +121,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Submit task"
+                    "value" : "Start process"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -267,9 +140,30 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
-                "reference" : "b897a9ce-18cd-4d16-9810-3a116401ed52",
+                "reference" : "c6e08fbe-57aa-4903-b79b-c514bac5ba8d",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -321,7 +215,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "4b9d49f3-a2c8-4899-bc0f-c0b2b6f7192a",
+                "reference" : "aced941b-bc68-4537-b04a-42e824a37f22",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -333,19 +227,10 @@
     ]
   ],
   "variables" : {
-    "task" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
     "formInput" : {
       "type" : "json",
       "value" : [
-        "{\r",
-        "  \"gestor_ov\" : \"\"\r",
-        "}"
+        "{ }"
       ],
       "exposed" : false
     },
@@ -368,36 +253,22 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tgestor_ov: $data.formInput.gestor_ov",
+        "",
         "}"
-      ],
-      "exposed" : false
-    },
-    "context" : {
-      "type" : "url",
-      "value" : [
-        "../API/bpm/userTask/{{taskId}}/context"
-      ],
-      "exposed" : false
-    },
-    "taskId" : {
-      "type" : "urlparameter",
-      "value" : [
-        "id"
       ],
       "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "0dcf4a3a-c1ee-4d86-b7b5-53c5b364f5e4",
+      "id" : "08b2cd48-6099-466f-9310-279f12eebff5",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "b91c4e2b-d0b3-4b45-abc3-7334be838c2e",
+      "id" : "684aba35-806c-4604-83ef-dbe252237896",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,

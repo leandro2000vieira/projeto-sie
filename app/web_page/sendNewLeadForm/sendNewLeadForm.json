@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "b2c15f95-6778-41c1-9e60-e3c9f35a7b41",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718823202623,
+  "lastUpdate" : 1718825254807,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -475,7 +475,7 @@
       "value" : [
         "{\r",
         "  \"clienteInput\" : \"\",\r",
-        "  \"unidadeDeNegocio\" : \"\"\r",
+        "  \"unidadeDeNegocio\" : \"Sem Unidade de Negócio\"\r",
         "}"
       ],
       "exposed" : false

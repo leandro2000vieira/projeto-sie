@@ -18,6 +18,21 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="Admin">
+      <firstName>Admin</firstName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="menino.negocios">
+      <firstName>Menino</firstName>
+      <lastName>dos Neg&#xf3;cios</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -29,6 +44,12 @@
     </role>
     <role name="GestorOV">
       <displayName>GestorOV</displayName>
+    </role>
+    <role name="Admin">
+      <displayName>Admin</displayName>
+    </role>
+    <role name="GestorUN">
+      <displayName>GestorUN</displayName>
     </role>
   </roles>
   <groups>
@@ -87,7 +108,20 @@ Valida&#xe7;&#xe3;o das regras financeiras em vigor na empresa. Aprova&#xe7;&#xe
     <membership>
       <userName>rapaz.entregas</userName>
       <roleName>Entregar</roleName>
-      <groupName>Empresa</groupName>
+      <groupName>Interno</groupName>
+      <groupParentPath>/Empresa</groupParentPath>
+    </membership>
+    <membership>
+      <userName>Admin</userName>
+      <roleName>Admin</roleName>
+      <groupName>Administracao</groupName>
+      <groupParentPath>/Empresa</groupParentPath>
+    </membership>
+    <membership>
+      <userName>menino.negocios</userName>
+      <roleName>GestorUN</roleName>
+      <groupName>Gestor da Unidade de Negocio</groupName>
+      <groupParentPath>/Empresa</groupParentPath>
     </membership>
   </memberships>
 </organization:Organization>
