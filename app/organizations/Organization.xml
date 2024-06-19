@@ -10,10 +10,25 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="rapaz.entregas">
+      <firstName>Rapaz</firstName>
+      <lastName>das Entregas</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
-    <role name="Role1">
+    <role name="Member">
       <displayName>Member</displayName>
+    </role>
+    <role name="Entregar">
+      <displayName>Entregar</displayName>
+      <description>Entregar novas Oportunidades de Venda</description>
+    </role>
+    <role name="GestorOV">
+      <displayName>GestorOV</displayName>
     </role>
   </roles>
   <groups>
@@ -58,16 +73,20 @@ Valida&#xe7;&#xe3;o das regras financeiras em vigor na empresa. Aprova&#xe7;&#xe
     <group name="Angariacao" parentPath="/Empresa">
       <displayName>Angaria&#xe7;&#xe3;o</displayName>
     </group>
+    <group name="Interno" parentPath="/Empresa">
+      <displayName>Origem Interna</displayName>
+    </group>
   </groups>
   <memberships>
     <membership>
       <userName>leandro.vieiria</userName>
-      <roleName>Role1</roleName>
-      <groupName>Empresa</groupName>
+      <roleName>GestorOV</roleName>
+      <groupName>Gestor da OV</groupName>
+      <groupParentPath>/Empresa</groupParentPath>
     </membership>
     <membership>
-      <userName>leandro.vieiria</userName>
-      <roleName>Role1</roleName>
+      <userName>rapaz.entregas</userName>
+      <roleName>Entregar</roleName>
       <groupName>Empresa</groupName>
     </membership>
   </memberships>
