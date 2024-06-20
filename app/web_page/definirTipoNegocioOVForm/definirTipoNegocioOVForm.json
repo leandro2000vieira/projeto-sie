@@ -1,10 +1,10 @@
 {
-  "id" : "sendNewLeadForm",
-  "name" : "sendNewLeadForm",
+  "id" : "definirTipoNegocioOVForm",
+  "name" : "definirTipoNegocioOVForm",
   "type" : "form",
-  "uuid" : "b2c15f95-6778-41c1-9e60-e3c9f35a7b41",
+  "uuid" : "21ef62b6-ad44-4560-a7a3-cfa659aba65c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718885331549,
+  "lastUpdate" : 1718910437549,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "b4a34aca-c4a2-4bec-a2ae-dbffbd3e82f1",
+        "reference" : "aaf7f35f-e640-45b4-a2a6-fe6572987902",
         "hasValidationError" : false,
         "id" : "pbContainer",
         "rows" : [
@@ -51,13 +51,9 @@
                 "dimension" : {
                   "type" : "constant",
                   "value" : 12
-                },
-                "allowHTML" : {
-                  "type" : "constant",
-                  "value" : false
                 }
               },
-              "reference" : "837b943e-57e5-4737-8c6b-3218c2ef324a",
+              "reference" : "a143db6c-b87d-4501-9f4a-e8c544f14f06",
               "hasValidationError" : false,
               "id" : "pbTitle",
               "description" : ""
@@ -105,7 +101,7 @@
                   "value" : 12
                 }
               },
-              "reference" : "92ed0265-825c-43b5-8498-2e72afaa2a54",
+              "reference" : "bafaed74-97fc-4944-a05c-a66de6b245c0",
               "hasValidationError" : false,
               "id" : "pbText",
               "description" : ""
@@ -120,17 +116,8 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : {
-          "cssClasses" : {
-            "type" : "constant",
-            "value" : ""
-          },
-          "hidden" : {
-            "type" : "constant",
-            "value" : false
-          }
-        },
-        "reference" : "79d626ee-ab6e-4e6d-bba5-4ac79e5e17f9",
+        "propertyValues" : { },
+        "reference" : "a56338c3-2b9f-4846-b1f4-3229139cadec",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -139,7 +126,7 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "260812bd-ccef-4a87-a94f-47d97fce7df9",
+          "reference" : "4295e494-2dc0-4b55-82af-21ea429ade45",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
@@ -153,154 +140,285 @@
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "labelPosition" : {
+                  "level" : {
                     "type" : "constant",
-                    "value" : "top"
+                    "value" : "Level 4"
                   },
                   "cssClasses" : {
                     "type" : "constant",
                     "value" : ""
                   },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 1
-                  },
-                  "readOnly" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
+                  "text" : {
                     "type" : "interpolation",
-                    "value" : "Cliente"
+                    "value" : "Oportunidade Venda"
                   },
-                  "placeholder" : {
-                    "type" : "constant"
-                  },
-                  "type" : {
+                  "alignment" : {
                     "type" : "constant",
-                    "value" : "text"
+                    "value" : "left"
                   },
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.clienteInput"
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "minLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "maxLength" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "debounce" : {
-                    "type" : "constant",
-                    "value" : 0
-                  },
-                  "min" : {
-                    "type" : "constant"
-                  },
-                  "max" : {
-                    "type" : "constant"
-                  },
-                  "step" : {
-                    "type" : "constant",
-                    "value" : 1
                   }
                 },
-                "reference" : "8d6a3550-f915-4830-91cb-cce30494ee45",
+                "reference" : "35ba16a7-1256-456d-848f-ffd81b56924c",
                 "hasValidationError" : false,
-                "id" : "pbInput",
+                "id" : "pbTitle",
                 "description" : ""
               }
             ],
             [
               {
-                "type" : "component",
+                "type" : "container",
                 "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
                   "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
+                  "repeatedCollection" : {
+                    "type" : "variable"
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "disabled" : {
+                  "cssClasses" : {
                     "type" : "constant",
-                    "value" : false
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Unidade De Negocio"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "placeholder" : {
-                    "type" : "interpolation",
                     "value" : ""
                   },
-                  "availableValues" : {
-                    "type" : "expression",
-                    "value" : "unidadesDeNegocio"
-                  },
-                  "displayedKey" : {
-                    "type" : "constant"
-                  },
-                  "returnedKey" : {
-                    "type" : "constant"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.unidadeDeNegocio"
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
                   }
                 },
-                "reference" : "c77809f5-cf3f-4516-9845-4caf492f36a0",
+                "reference" : "ad103ef1-d755-4130-8d6e-7e9e45080c98",
                 "hasValidationError" : false,
-                "id" : "pbSelect"
+                "id" : "pbContainer",
+                "rows" : [
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!oportunidadeVenda.nome"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Nome"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{oportunidadeVenda.nome}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "6ef3b5ba-0d10-4d2a-9e0d-e671f6d90477",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!oportunidadeVenda.descricao"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Descricao"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{oportunidadeVenda.descricao}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "bd546143-5cf1-46b0-ac44-198b9e01c292",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "md" : 12,
+                        "sm" : 12,
+                        "xs" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "allowHtml" : {
+                          "type" : "constant",
+                          "value" : true
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "hidden" : {
+                          "type" : "expression",
+                          "value" : "!oportunidadeVenda.cliente"
+                        },
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Cliente"
+                        },
+                        "text" : {
+                          "type" : "interpolation",
+                          "value" : "{{oportunidadeVenda.cliente}}"
+                        },
+                        "alignment" : {
+                          "type" : "constant",
+                          "value" : "left"
+                        },
+                        "dimension" : {
+                          "type" : "constant",
+                          "value" : 12
+                        }
+                      },
+                      "reference" : "fd625670-4184-4fe4-a3ba-e73e0d548dcb",
+                      "hasValidationError" : false,
+                      "id" : "pbText",
+                      "description" : ""
+                    }
+                  ],
+                  [
+                    {
+                      "type" : "component",
+                      "dimension" : {
+                        "xs" : 12,
+                        "sm" : 12,
+                        "md" : 12,
+                        "lg" : 12
+                      },
+                      "propertyValues" : {
+                        "cssClasses" : {
+                          "type" : "constant",
+                          "value" : ""
+                        },
+                        "hidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "disabled" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "required" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "allowHTML" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "labelHidden" : {
+                          "type" : "constant",
+                          "value" : false
+                        },
+                        "label" : {
+                          "type" : "interpolation",
+                          "value" : "Unidade De Negócio"
+                        },
+                        "labelPosition" : {
+                          "type" : "constant",
+                          "value" : "top"
+                        },
+                        "labelWidth" : {
+                          "type" : "constant",
+                          "value" : 4
+                        },
+                        "placeholder" : {
+                          "type" : "interpolation",
+                          "value" : "Select an option"
+                        },
+                        "availableValues" : {
+                          "type" : "expression",
+                          "value" : "unidadesDeNegocioList"
+                        },
+                        "displayedKey" : {
+                          "type" : "constant"
+                        },
+                        "returnedKey" : {
+                          "type" : "constant"
+                        },
+                        "value" : {
+                          "type" : "variable",
+                          "value" : "oportunidadeVenda.unidade_negocio"
+                        }
+                      },
+                      "reference" : "7614c753-b4de-4b7f-a2a1-f9a03c34668d",
+                      "hasValidationError" : false,
+                      "id" : "pbSelect"
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -330,7 +448,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Enviar"
+                    "value" : "Submit"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -376,30 +494,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable"
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "47748399-d4a8-4fe5-ad0b-d13e16afca52",
+                "reference" : "f77df35d-7799-47c4-a848-89b3ddd3de29",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -451,7 +548,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7dfb1fbd-9edc-4373-821f-db062a79f19e",
+                "reference" : "2e8dbf0b-afa4-40f5-94f2-bade8315c4d2",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -467,16 +564,6 @@
       "type" : "url",
       "value" : [
         "../API/bpm/userTask/{{taskId}}"
-      ],
-      "exposed" : false
-    },
-    "formInput" : {
-      "type" : "json",
-      "value" : [
-        "{\r",
-        "  \"clienteInput\" : \"\",\r",
-        "  \"unidadeDeNegocio\" : \"Sem Unidade de Negócio\"\r",
-        "}"
       ],
       "exposed" : false
     },
@@ -498,9 +585,13 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "return {",
-        "\tclienteInput: $data.formInput.clienteInput,",
-        "\tunidadeDeNegocio: $data.formInput.unidadeDeNegocio",
+        "if( $data.oportunidadeVenda ){",
+        "\treturn {",
+        "\t\t//map oportunidadeVenda variable to expected task contract input",
+        "\t\toportunidadeVendaInput: {",
+        "\t\t\tunidade_negocio: $data.oportunidadeVenda.unidade_negocio !== undefined ? $data.oportunidadeVenda.unidade_negocio : null",
+        "\t\t}",
+        "\t}",
         "}"
       ],
       "exposed" : false
@@ -512,6 +603,13 @@
       ],
       "exposed" : false
     },
+    "oportunidadeVenda" : {
+      "type" : "url",
+      "value" : [
+        "../{{context.oportunidadeVenda_ref.link}}"
+      ],
+      "exposed" : false
+    },
     "taskId" : {
       "type" : "urlparameter",
       "value" : [
@@ -519,7 +617,7 @@
       ],
       "exposed" : false
     },
-    "unidadesDeNegocio" : {
+    "unidadesDeNegocioList" : {
       "type" : "json",
       "value" : [
         "[\"Sem Unidade de Negócio\", \"Venda de Produtos\", \"Venda de Soluções\", \"Venda de Contratos\"]"
@@ -529,14 +627,14 @@
   },
   "assets" : [
     {
-      "id" : "478f0829-d9ed-4f47-b1a5-ec0a9784277b",
+      "id" : "0a462e60-6670-4384-846b-65d81d7c0c4d",
       "name" : "style.css",
       "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "5474c5a6-cc2f-4676-81da-e5e255cfd6a7",
+      "id" : "ea0ad0b9-50af-449b-9fc3-b067bd6afea1",
       "name" : "localization.json",
       "type" : "json",
       "order" : 0,
