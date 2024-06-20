@@ -1,10 +1,10 @@
 {
-  "id" : "origemInternaForm",
-  "name" : "origemInternaForm",
+  "id" : "registarOportunidaDeVendaProcessForm",
+  "name" : "registarOportunidaDeVendaProcessForm",
   "type" : "form",
-  "uuid" : "72d18588-8958-4553-8780-354eca6afaad",
+  "uuid" : "ff4d58e1-b758-4985-994a-73959e0dede9",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718823061247,
+  "lastUpdate" : 1718827909729,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -14,7 +14,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "59eef365-8965-4cde-89dc-b8b15b337ecb",
+        "reference" : "4914af1e-ab19-4298-aca7-5f5595db925e",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -23,50 +23,10 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "4eaae22e-a419-4377-9e3a-e92e931f8120",
+          "reference" : "e8628822-40be-469c-a2dc-df7ef4f2722a",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Origem Interna"
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 2"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "center"
-                  }
-                },
-                "reference" : "065322f9-2fa1-46c0-a1eb-995d3b825873",
-                "hasValidationError" : false,
-                "id" : "pbTitle"
-              }
-            ],
             [
               {
                 "type" : "component",
@@ -94,7 +54,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Start"
+                    "value" : "Submit"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -140,30 +100,9 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
-                  },
-                  "assign" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "url" : {
-                    "type" : "interpolation"
-                  },
-                  "responseStatusCode" : {
-                    "type" : "variable"
-                  },
-                  "dataFromSuccess" : {
-                    "type" : "variable"
-                  },
-                  "closeOnSuccess" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "modalId" : {
-                    "type" : "constant",
-                    "value" : ""
                   }
                 },
-                "reference" : "06f23d08-a7ab-43cc-aee4-2114b277b3ad",
+                "reference" : "30c739f1-fe03-48b1-b3aa-126178551004",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -215,7 +154,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7434a704-ed67-4096-b5fa-5575e8fbc446",
+                "reference" : "5872f065-6a60-4a79-944e-bfc555911745",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -261,16 +200,16 @@
   },
   "assets" : [
     {
-      "id" : "7fe07fc7-4832-44ff-b923-ebbdb25e1a36",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "5708c58e-0840-42b6-9f43-6296231741cb",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "039b355a-1fd1-476e-80f5-964c5192a607",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "c4f1fcda-8e29-42a3-8467-e18ab602a6a6",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
