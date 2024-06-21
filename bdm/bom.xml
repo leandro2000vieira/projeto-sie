@@ -1,6 +1,27 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0">
     <businessObjects>
+        <businessObject qualifiedName="crm.Cotacao">
+            <fields>
+                <field type="LONG" length="255" name="id_ov" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="estado_cotacao" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="numero_revisoes" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="condicoes_especiais" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="created_at" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="crm.EquipaTecnica">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="disponibilidade" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
         <businessObject qualifiedName="crm.FichaCliente">
             <fields>
                 <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
@@ -30,6 +51,7 @@
                 </field>
                 <field type="OFFSETDATETIME" length="255" name="created_at" nullable="true" collection="false"/>
                 <field type="OFFSETDATETIME" length="255" name="updated_at" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="tipo_venda" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints>
                 <uniqueConstraint name="uniqueConstraint">
@@ -39,6 +61,45 @@
                     </fieldNames>
                 </uniqueConstraint>
             </uniqueConstraints>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="crm.Propostas">
+            <fields>
+                <field type="LONG" length="255" name="id_ov" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="id_solucao" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="id_cotacao" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="crm.Solucao">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="id_ov" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="justificacao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="descricao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="solucao" nullable="true" collection="false"/>
+                <field type="INTEGER" length="255" name="dias_necessarios" nullable="true" collection="false"/>
+                <field type="LOCALDATE" length="255" name="data_prevista" nullable="true" collection="false"/>
+                <field type="BOOLEAN" length="255" name="necessario_fornecedores" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="precos" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="prazos" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="condicoes_entrega" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="requisitos" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="especificacoes" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="crm.SolucaoEquipaTecnica">
+            <fields>
+                <field type="STRING" length="255" name="id_solucao" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="id_equipa_tecnica" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints/>
             <queries/>
             <indexes/>
         </businessObject>

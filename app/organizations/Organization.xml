@@ -33,6 +33,22 @@
       <password encrypted="false">bpm</password>
       <customUserInfoValues/>
     </user>
+    <user userName="area.comercial">
+      <firstName>Area</firstName>
+      <lastName>Comercial</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
+    <user userName="equipa.tecnica">
+      <firstName>Equipa</firstName>
+      <lastName>Tecnica</lastName>
+      <personalData/>
+      <professionalData/>
+      <password encrypted="false">bpm</password>
+      <customUserInfoValues/>
+    </user>
   </users>
   <roles>
     <role name="Member">
@@ -50,6 +66,12 @@
     </role>
     <role name="GestorUN">
       <displayName>GestorUN</displayName>
+    </role>
+    <role name="AreaComercial">
+      <displayName>AreaComercial</displayName>
+    </role>
+    <role name="EquipaTecnica">
+      <displayName>EquipaTecnica</displayName>
     </role>
   </roles>
   <groups>
@@ -122,6 +144,17 @@ Valida&#xe7;&#xe3;o das regras financeiras em vigor na empresa. Aprova&#xe7;&#xe
       <roleName>GestorUN</roleName>
       <groupName>Gestor da Unidade de Negocio</groupName>
       <groupParentPath>/Empresa</groupParentPath>
+    </membership>
+    <membership>
+      <userName>area.comercial</userName>
+      <roleName>AreaComercial</roleName>
+      <groupName>area comercial</groupName>
+      <groupParentPath>/Empresa</groupParentPath>
+    </membership>
+    <membership>
+      <userName>equipa.tecnica</userName>
+      <roleName>Member</roleName>
+      <groupName>Empresa</groupName>
     </membership>
   </memberships>
 </organization:Organization>

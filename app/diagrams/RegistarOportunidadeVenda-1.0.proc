@@ -1192,11 +1192,11 @@
       </overviewFormMapping>
       <connections xmi:type="process:SequenceFlow" xmi:id="_jInVCyQOEe-tg7y1lld14w" target="_kxxEICQOEe-tg7y1lld14w" source="_ghQRMCQOEe-tg7y1lld14w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_jIn8ECQOEe-tg7y1lld14w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_jIn8ESQOEe-tg7y1lld14w" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_jIn8ESQOEe-tg7y1lld14w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_mlxYZyQOEe-tg7y1lld14w" target="_m-rnoCQOEe-tg7y1lld14w" source="_kxxEICQOEe-tg7y1lld14w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_mlxYaCQOEe-tg7y1lld14w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_mlxYaSQOEe-tg7y1lld14w" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_mlxYaSQOEe-tg7y1lld14w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_pPkFISQOEe-tg7y1lld14w" name="sim" target="_p60BkCQOEe-tg7y1lld14w" source="_m-rnoCQOEe-tg7y1lld14w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_pPkFIiQOEe-tg7y1lld14w"/>
