@@ -1145,27 +1145,9 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_FKN9kS9REe-2S-agflEehA" name="oportunidadeVenda" content="oportunidadeVenda" type="TYPE_VARIABLE" returnType="crm.OportunidadeVenda">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_KaSsQC-iEe-mxbhXQmGY3Q" name="oportunidadeVenda" dataType="_asDfdBkUEe-yBLl2X56m4w" className="crm.OportunidadeVenda"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_FKN9ki9REe-2S-agflEehA" name="status" content="&quot;Rascunho&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_FKN9ki9REe-2S-agflEehA" name="status" content="return &quot;Rascunho&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT"/>
             <operator xmi:type="expression:Operator" xmi:id="_FKN9ky9REe-2S-agflEehA" type="JAVA_METHOD" expression="setStatus">
               <inputTypes>java.lang.String</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_8IJ8MC_JEe-yKfPfoy7hbg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_8IJ8MS_JEe-yKfPfoy7hbg" name="oportunidadeVenda" content="oportunidadeVenda" type="TYPE_VARIABLE" returnType="crm.OportunidadeVenda">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8v3ccC_JEe-yKfPfoy7hbg" name="oportunidadeVenda" dataType="_asDfdBkUEe-yBLl2X56m4w" className="crm.OportunidadeVenda"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_8IJ8Mi_JEe-yKfPfoy7hbg" name="newScript()" content="import java.time.*&#xD;&#xA;def now = LocalDateTime.now()&#xD;&#xA;return now" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime"/>
-            <operator xmi:type="expression:Operator" xmi:id="_8IJ8My_JEe-yKfPfoy7hbg" type="JAVA_METHOD" expression="setCreated_at">
-              <inputTypes>java.time.OffsetDateTime</inputTypes>
-            </operator>
-          </operations>
-          <operations xmi:type="expression:Operation" xmi:id="_8Oa8QC_JEe-yKfPfoy7hbg">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_8Oa8QS_JEe-yKfPfoy7hbg" name="oportunidadeVenda" content="oportunidadeVenda" type="TYPE_VARIABLE" returnType="crm.OportunidadeVenda">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_8-4v4C_JEe-yKfPfoy7hbg" name="oportunidadeVenda" dataType="_asDfdBkUEe-yBLl2X56m4w" className="crm.OportunidadeVenda"/>
-            </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_8Oa8Qi_JEe-yKfPfoy7hbg" name="newScript()" content="import java.time.*&#xD;&#xA;def now = LocalDateTime.now()&#xD;&#xA;return now" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.time.OffsetDateTime"/>
-            <operator xmi:type="expression:Operator" xmi:id="_8Oa8Qy_JEe-yKfPfoy7hbg" type="JAVA_METHOD" expression="setUpdated_at">
-              <inputTypes>java.time.OffsetDateTime</inputTypes>
             </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_sz1dJCQOEe-tg7y1lld14w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -1199,11 +1181,11 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_I0H1IC-hEe-mxbhXQmGY3Q" name="false" content="false" returnType="java.lang.Boolean"/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_b0HUQC-hEe-mxbhXQmGY3Q" name="unidadeNegocio" dataType="_asDfdBkUEe-yBLl2X56m4w" className="crm.UnidadeNegocio">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_b0HUQS-hEe-mxbhXQmGY3Q" name="init_unidadeNegocio()" content="def unidadeNegocio = (crm.UnidadeNegocio) unidadeNegocioDAO.findByNome(unInput, 0, 1)&#xD;&#xA;if (unidadeNegocio == null) {&#xD;&#xA;&#x9;unidadeNegocio = new crm.UnidadeNegocio()&#xD;&#xA;&#x9;unidadeNegocio.nome = unInput&#xD;&#xA;}&#xD;&#xA;return unidadeNegocio" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.UnidadeNegocio">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_PsDYoC_VEe-yKfPfoy7hbg" name="unInput">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_PsDYoS_VEe-yKfPfoy7hbg"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_b0HUQS-hEe-mxbhXQmGY3Q" name="init_unidadeNegocio()" content="def unidadeNegocio = (crm.UnidadeNegocio) unidadeNegocioDAO?.findByNome(unInput, 0, 1)&#xD;&#xA;if (unidadeNegocio == null) {&#xD;&#xA;&#x9;unidadeNegocio = new crm.UnidadeNegocio()&#xD;&#xA;&#x9;unidadeNegocio.nome = unInput&#xD;&#xA;}&#xD;&#xA;return unidadeNegocio" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.UnidadeNegocio">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_KOUvMC_WEe-yKfPfoy7hbg" name="unInput">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_KOUvMS_WEe-yKfPfoy7hbg"/>
           </referencedElements>
-          <referencedElements xmi:type="expression:Expression" xmi:id="_PsD_sC_VEe-yKfPfoy7hbg" name="unidadeNegocioDAO" content="unidadeNegocioDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.UnidadeNegocioDAO" returnTypeFixed="true"/>
+          <referencedElements xmi:type="expression:Expression" xmi:id="_KOUvMi_WEe-yKfPfoy7hbg" name="unidadeNegocioDAO" content="unidadeNegocioDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.UnidadeNegocioDAO" returnTypeFixed="true"/>
         </defaultValue>
       </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_ZSmSMCQOEe-tg7y1lld14w" type="NONE">
