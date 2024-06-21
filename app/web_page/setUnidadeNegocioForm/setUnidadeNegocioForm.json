@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "d9a05549-8f79-4580-8747-5d30fea778e8",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718961972513,
+  "lastUpdate" : 1718973769464,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -205,7 +205,7 @@
                   },
                   "value" : {
                     "type" : "variable",
-                    "value" : "formInput.unidade_negocio"
+                    "value" : "formInput.unidadeNegocioInput"
                   }
                 },
                 "reference" : "9d5fc270-a913-4b96-b7c2-7ead511d1823",
@@ -270,8 +270,8 @@
                     "value" : true
                   },
                   "hidden" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "!check"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -309,8 +309,8 @@
                     "value" : "formInput.unidadeNegocioInput"
                   },
                   "required" : {
-                    "type" : "constant",
-                    "value" : false
+                    "type" : "expression",
+                    "value" : "check"
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -417,6 +417,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "a01699ea-dc24-4fe4-994a-8a7bc75ad40c",
@@ -518,7 +539,7 @@
       "type" : "expression",
       "value" : [
         "return {",
-        "\tunidade_negocio: $data.formInput.unidade_negocio",
+        "\tunidadeNegocioInput: $data.formInput.unidadeNegocioInput",
         "}"
       ],
       "exposed" : false
@@ -550,7 +571,7 @@
     "unidadesDeNegocioList" : {
       "type" : "json",
       "value" : [
-        "[\"Sem Unidade de Negócio\", \"Venda de Produtos\", \"Venda de Soluções\", \"Venda de Contratos\"]"
+        "[\"Venda de Produtos\", \"Venda de Soluções\", \"Venda de Contratos\"]"
       ],
       "exposed" : false
     }
