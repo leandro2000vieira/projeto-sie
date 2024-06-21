@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "c5d0c1fb-029f-4abe-90d5-5f20368c7588",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718965344014,
+  "lastUpdate" : 1718975994146,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -116,7 +116,16 @@
         "dimension" : {
           "xs" : 12
         },
-        "propertyValues" : { },
+        "propertyValues" : {
+          "cssClasses" : {
+            "type" : "constant",
+            "value" : ""
+          },
+          "hidden" : {
+            "type" : "constant",
+            "value" : false
+          }
+        },
         "reference" : "91f1345b-c1b1-48f2-bc1c-643f78723e25",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
@@ -130,51 +139,6 @@
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
-                  "xs" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Novo_negocio"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.novo_negocio"
-                  }
-                },
-                "reference" : "52b59306-8017-4224-b219-2c34eb3c2859",
-                "hasValidationError" : false,
-                "id" : "pbCheckbox",
-                "description" : ""
-              }
-            ],
             [
               {
                 "type" : "component",
@@ -677,14 +641,8 @@
     "formOutput" : {
       "type" : "expression",
       "value" : [
-        "if( $data.oportunidadeVenda ){",
-        "\treturn {",
-        "\t\tnovo_negocio: $data.formInput.novo_negocio,",
-        "\t\t//map oportunidadeVenda variable to expected task contract input",
-        "\t\toportunidadeVendaInput: {",
-        "\t\t\tunidade_negocio_id: $data.oportunidadeVenda.unidade_negocio_id !== undefined ? $data.oportunidadeVenda.unidade_negocio_id : null",
-        "\t\t}",
-        "\t}",
+        "return {",
+        "\tnovoNegocioInput: $data.formInput.novoNegocioInput,",
         "}"
       ],
       "exposed" : false
@@ -711,9 +669,10 @@
       "exposed" : false
     },
     "unidadeNegocio" : {
-      "type" : "url",
+      "type" : "expression",
       "value" : [
-        "../API/bpm/caseVariable?p=0&c=10&f=case_id={{unidade_negocio}}"
+        "",
+        "return $data.context"
       ],
       "exposed" : false
     }

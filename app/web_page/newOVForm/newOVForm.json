@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2f99a462-f946-4fd2-987b-d2c65d77cb37",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718966951626,
+  "lastUpdate" : 1718974595307,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -560,58 +560,135 @@
               {
                 "type" : "component",
                 "dimension" : {
-                  "md" : 12,
-                  "sm" : 12,
                   "xs" : 12,
+                  "sm" : 12,
+                  "md" : 12,
                   "lg" : 12
                 },
                 "propertyValues" : {
-                  "labelHidden" : {
+                  "cssClasses" : {
                     "type" : "constant",
-                    "value" : false
+                    "value" : ""
                   },
                   "hidden" : {
                     "type" : "constant",
                     "value" : false
                   },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "checkBoxOutro"
                   },
-                  "cssClasses" : {
+                  "required" : {
                     "type" : "constant",
-                    "value" : ""
+                    "value" : false
                   },
-                  "labelWidth" : {
+                  "allowHTML" : {
                     "type" : "constant",
-                    "value" : 1
+                    "value" : false
                   },
-                  "readOnly" : {
+                  "labelHidden" : {
                     "type" : "constant",
                     "value" : false
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Unidade_negocio"
+                    "value" : "Unidades de Negócio"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
                   },
                   "placeholder" : {
+                    "type" : "interpolation",
+                    "value" : ""
+                  },
+                  "availableValues" : {
+                    "type" : "expression",
+                    "value" : "unidadesDeNegocioList"
+                  },
+                  "displayedKey" : {
                     "type" : "constant"
                   },
-                  "type" : {
-                    "type" : "constant",
-                    "value" : "text"
-                  },
-                  "dimension" : {
-                    "type" : "constant",
-                    "value" : 12
+                  "returnedKey" : {
+                    "type" : "constant"
                   },
                   "value" : {
                     "type" : "variable",
                     "value" : "formInput.unidadeNegocioInput"
+                  }
+                },
+                "reference" : "b26a12e4-bef2-4314-971a-c4998a8b20a9",
+                "hasValidationError" : false,
+                "id" : "pbSelect"
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 2,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "disabled" : {
+                    "type" : "constant",
+                    "value" : false
                   },
                   "required" : {
                     "type" : "constant",
                     "value" : false
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Outro"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "checkBoxOutro"
+                  }
+                },
+                "reference" : "eb957c6a-b85a-47da-9b6a-58b9043a17cc",
+                "hasValidationError" : false,
+                "id" : "pbCheckbox"
+              },
+              {
+                "type" : "component",
+                "dimension" : {
+                  "xs" : 12,
+                  "sm" : 12,
+                  "md" : 10,
+                  "lg" : 6
+                },
+                "propertyValues" : {
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!checkBoxOutro"
+                  },
+                  "required" : {
+                    "type" : "expression",
+                    "value" : "checkBoxOutro"
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -625,9 +702,39 @@
                     "type" : "constant",
                     "value" : ""
                   },
-                  "debounce" : {
+                  "readOnly" : {
                     "type" : "constant",
-                    "value" : 0
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Default label"
+                  },
+                  "labelPosition" : {
+                    "type" : "constant",
+                    "value" : "top"
+                  },
+                  "labelWidth" : {
+                    "type" : "constant",
+                    "value" : 4
+                  },
+                  "placeholder" : {
+                    "type" : "interpolation"
+                  },
+                  "value" : {
+                    "type" : "variable",
+                    "value" : "formInput.unidadeNegocioInput"
+                  },
+                  "debounce" : {
+                    "type" : "constant"
+                  },
+                  "type" : {
+                    "type" : "constant",
+                    "value" : "text"
                   },
                   "min" : {
                     "type" : "constant"
@@ -640,10 +747,9 @@
                     "value" : 1
                   }
                 },
-                "reference" : "1dd85bf7-65c6-49d0-828b-11adc5c75a06",
+                "reference" : "608e364e-50f2-4ec8-b239-1c6b65bd285a",
                 "hasValidationError" : false,
-                "id" : "pbInput",
-                "description" : ""
+                "id" : "pbInput"
               }
             ],
             [
@@ -874,6 +980,23 @@
       "type" : "urlparameter",
       "value" : [
         "id"
+      ],
+      "exposed" : false
+    },
+    "checkBoxOutro" : {
+      "type" : "json",
+      "value" : [
+        "{",
+        "    \"1\": true,",
+        "    \"2\": false",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "unidadesDeNegocioList" : {
+      "type" : "json",
+      "value" : [
+        "[\"\", \"Venda de Produtos\", \"Venda de Soluções\", \"Venda de Contratos\"]"
       ],
       "exposed" : false
     }

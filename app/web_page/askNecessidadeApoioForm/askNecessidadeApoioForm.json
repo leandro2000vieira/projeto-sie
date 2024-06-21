@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "f680e691-68e8-4388-b464-af24a029e796",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718961896099,
+  "lastUpdate" : 1718974520394,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -158,7 +158,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Necessidade de apoio?"
+                    "value" : "Necessidade de apoio."
                   },
                   "dimension" : {
                     "type" : "constant",
@@ -210,7 +210,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Submit"
+                    "value" : "Continuar"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -256,6 +256,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "e78caaa3-b480-47d3-b546-e7206315f3f4",
