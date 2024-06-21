@@ -1,24 +1,51 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <businessObjectModel xmlns="http://documentation.bonitasoft.com/bdm-xml-schema/1.0" modelVersion="1.0">
     <businessObjects>
-        <businessObject qualifiedName="com.company.model.FichaCliente">
+        <businessObject qualifiedName="crm.FichaCliente">
             <fields>
                 <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
-                <field type="INTEGER" length="255" name="oportunidade_venda_id" nullable="true" collection="true"/>
+                <field type="STRING" length="255" name="contacto" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="gestor_cliente" nullable="true" collection="false"/>
             </fields>
-            <uniqueConstraints/>
+            <uniqueConstraints>
+                <uniqueConstraint name="uniqueConstraint">
+                    <fieldNames>
+                        <fieldName>contacto</fieldName>
+                    </fieldNames>
+                </uniqueConstraint>
+            </uniqueConstraints>
             <queries/>
             <indexes/>
         </businessObject>
-        <businessObject qualifiedName="com.company.model.OportunidadeVenda">
+        <businessObject qualifiedName="crm.OportunidadeVenda">
             <fields>
                 <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
                 <field type="TEXT" length="255" name="descricao" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="unidade_negocio" nullable="true" collection="false">
+                <field type="STRING" length="255" name="origem" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="status" nullable="true" collection="false"/>
+                <field type="STRING" length="255" name="gestor_ov" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="cliente_id" nullable="true" collection="false"/>
+                <field type="LONG" length="255" name="unidade_negocio_id" nullable="true" collection="false">
                     <description>Oportunidade de venda está associada a um tipo_venda</description>
                 </field>
-                <field type="STRING" length="255" name="cliente" nullable="true" collection="false"/>
-                <field type="STRING" length="255" name="gestor_ov" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="created_at" nullable="true" collection="false"/>
+                <field type="OFFSETDATETIME" length="255" name="updated_at" nullable="true" collection="false"/>
+            </fields>
+            <uniqueConstraints>
+                <uniqueConstraint name="uniqueConstraint">
+                    <fieldNames>
+                        <fieldName>unidade_negocio_id</fieldName>
+                        <fieldName>cliente_id</fieldName>
+                    </fieldNames>
+                </uniqueConstraint>
+            </uniqueConstraints>
+            <queries/>
+            <indexes/>
+        </businessObject>
+        <businessObject qualifiedName="crm.UnidadeNegocio">
+            <fields>
+                <field type="STRING" length="255" name="nome" nullable="true" collection="false"/>
+                <field type="TEXT" length="255" name="descricao" nullable="true" collection="false"/>
             </fields>
             <uniqueConstraints/>
             <queries/>

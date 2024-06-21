@@ -1,12 +1,115 @@
 {
-  "id" : "processForm",
-  "name" : "processForm",
+  "id" : "recorrerApoioForm",
+  "name" : "recorrerApoioForm",
   "type" : "form",
-  "uuid" : "72d18588-8958-4553-8780-354eca6afaad",
+  "uuid" : "1789bb4c-000c-40e0-9cc3-04c153c62e09",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718888055095,
+  "lastUpdate" : 1718964037360,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
+    [
+      {
+        "type" : "container",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "e4876897-079f-476b-b27a-07692c562cee",
+        "hasValidationError" : false,
+        "id" : "pbContainer",
+        "rows" : [
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "level" : {
+                  "type" : "constant",
+                  "value" : "Level 1"
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayName }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "center"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "665ce4c8-1111-4ab1-bac5-5b7d125eddb2",
+              "hasValidationError" : false,
+              "id" : "pbTitle",
+              "description" : ""
+            }
+          ],
+          [
+            {
+              "type" : "component",
+              "dimension" : {
+                "md" : 12,
+                "sm" : 12,
+                "xs" : 12,
+                "lg" : 12
+              },
+              "propertyValues" : {
+                "allowHtml" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "labelHidden" : {
+                  "type" : "constant",
+                  "value" : true
+                },
+                "hidden" : {
+                  "type" : "constant",
+                  "value" : false
+                },
+                "cssClasses" : {
+                  "type" : "constant",
+                  "value" : ""
+                },
+                "label" : {
+                  "type" : "interpolation"
+                },
+                "text" : {
+                  "type" : "interpolation",
+                  "value" : "{{ task.displayDescription }}"
+                },
+                "alignment" : {
+                  "type" : "constant",
+                  "value" : "left"
+                },
+                "dimension" : {
+                  "type" : "constant",
+                  "value" : 12
+                }
+              },
+              "reference" : "ccf35703-bdc8-4edb-add5-5c4f845a878b",
+              "hasValidationError" : false,
+              "id" : "pbText",
+              "description" : ""
+            }
+          ]
+        ]
+      }
+    ],
     [
       {
         "type" : "formContainer",
@@ -14,7 +117,7 @@
           "xs" : 12
         },
         "propertyValues" : { },
-        "reference" : "59eef365-8965-4cde-89dc-b8b15b337ecb",
+        "reference" : "9857db22-9522-4d22-bff1-fdfbf725fbfe",
         "hasValidationError" : false,
         "id" : "pbFormContainer",
         "container" : {
@@ -23,102 +126,10 @@
             "xs" : 12
           },
           "propertyValues" : { },
-          "reference" : "4eaae22e-a419-4377-9e3a-e92e931f8120",
+          "reference" : "bd3d349d-b0f1-44cb-8c05-001315e24003",
           "hasValidationError" : false,
           "id" : "pbContainer",
           "rows" : [
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "Start Process"
-                  },
-                  "level" : {
-                    "type" : "constant",
-                    "value" : "Level 1"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "center"
-                  }
-                },
-                "reference" : "065322f9-2fa1-46c0-a1eb-995d3b825873",
-                "hasValidationError" : false,
-                "id" : "pbTitle"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 12,
-                  "lg" : 12
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : true
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Default label"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "text" : {
-                    "type" : "interpolation",
-                    "value" : "{{ pool.displayDescription }}"
-                  },
-                  "alignment" : {
-                    "type" : "constant",
-                    "value" : "left"
-                  }
-                },
-                "reference" : "e4e09105-ff7a-4d05-b28c-7aa43da20f56",
-                "hasValidationError" : false,
-                "id" : "pbText"
-              }
-            ],
             [
               {
                 "type" : "component",
@@ -146,7 +157,7 @@
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Start"
+                    "value" : "Recorrer"
                   },
                   "dataToSend" : {
                     "type" : "expression",
@@ -173,7 +184,7 @@
                   },
                   "action" : {
                     "type" : "constant",
-                    "value" : "Start process"
+                    "value" : "Submit task"
                   },
                   "collectionToModify" : {
                     "type" : "variable"
@@ -215,7 +226,7 @@
                     "value" : ""
                   }
                 },
-                "reference" : "06f23d08-a7ab-43cc-aee4-2114b277b3ad",
+                "reference" : "6af66608-2962-44df-9cbf-0fdffc32f764",
                 "hasValidationError" : false,
                 "id" : "pbButton",
                 "description" : ""
@@ -267,7 +278,7 @@
                     "value" : 12
                   }
                 },
-                "reference" : "7434a704-ed67-4096-b5fa-5575e8fbc446",
+                "reference" : "b6f1e2c2-aef9-4f4c-9455-3bca63cd0543",
                 "hasValidationError" : false,
                 "id" : "pbText",
                 "description" : ""
@@ -279,10 +290,10 @@
     ]
   ],
   "variables" : {
-    "formInput" : {
-      "type" : "json",
+    "task" : {
+      "type" : "url",
       "value" : [
-        "{ }"
+        "../API/bpm/userTask/{{taskId}}"
       ],
       "exposed" : false
     },
@@ -309,20 +320,34 @@
         "}"
       ],
       "exposed" : false
+    },
+    "context" : {
+      "type" : "url",
+      "value" : [
+        "../API/bpm/userTask/{{taskId}}/context"
+      ],
+      "exposed" : false
+    },
+    "taskId" : {
+      "type" : "urlparameter",
+      "value" : [
+        "id"
+      ],
+      "exposed" : false
     }
   },
   "assets" : [
     {
-      "id" : "7fe07fc7-4832-44ff-b923-ebbdb25e1a36",
-      "name" : "localization.json",
-      "type" : "json",
+      "id" : "4b1f2deb-fb9d-4350-bcac-5f05a9092acf",
+      "name" : "style.css",
+      "type" : "css",
       "order" : 0,
       "external" : false
     },
     {
-      "id" : "039b355a-1fd1-476e-80f5-964c5192a607",
-      "name" : "style.css",
-      "type" : "css",
+      "id" : "a78f7db2-3fc6-497e-a620-39c1440555ff",
+      "name" : "localization.json",
+      "type" : "json",
       "order" : 0,
       "external" : false
     }
