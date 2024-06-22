@@ -201,9 +201,9 @@
               <referencedElements xmi:type="process:Data" xmi:id="_yEqv4DCLEe-h3-8-f_7Vvw" name="existeFichaCliente" dataType="_asDfbBkUEe-yBLl2X56m4w"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_KBi_oi-jEe-mxbhXQmGY3Q" name="FichaCliente.findByContacto" content="def cliente = fichaClienteDAO.findByContacto(cliente_contacto)&#xD;&#xA;&#xD;&#xA;if (cliente != null) {&#xD;&#xA;    oportunidadeVenda.setCliente_id(cliente.persistenceId)&#xD;&#xA;&#x9;return true&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_DtkuADCREe-h3-8-f_7Vvw" name="fichaClienteDAO" content="fichaClienteDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.FichaClienteDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="process:Data" xmi:id="_DtlVEDCREe-h3-8-f_7Vvw" name="cliente_contacto" dataType="_asDfcRkUEe-yBLl2X56m4w"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DtlVETCREe-h3-8-f_7Vvw" name="oportunidadeVenda" dataType="_asDfdBkUEe-yBLl2X56m4w" className="crm.OportunidadeVenda"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_VaLV0DCVEe-h3-8-f_7Vvw" name="fichaClienteDAO" content="fichaClienteDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.FichaClienteDAO" returnTypeFixed="true"/>
+              <referencedElements xmi:type="process:Data" xmi:id="_VaLV0TCVEe-h3-8-f_7Vvw" name="cliente_contacto" dataType="_asDfcRkUEe-yBLl2X56m4w"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VaLV0jCVEe-h3-8-f_7Vvw" name="oportunidadeVenda" dataType="_asDfdBkUEe-yBLl2X56m4w" className="crm.OportunidadeVenda"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_KBi_oy-jEe-mxbhXQmGY3Q" type="ASSIGNMENT"/>
           </operations>
@@ -603,9 +603,9 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_pGBgky8wEe-2S-agflEehA" name="unidade_negocio" content="unidade_negocio" type="TYPE_VARIABLE">
               <referencedElements xmi:type="process:Data" xmi:id="_Ip1YEC-eEe-mxbhXQmGY3Q" name="unidade_negocio" dataType="_asDfcRkUEe-yBLl2X56m4w"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_pGBglS8wEe-2S-agflEehA" name="formInput.unidade_negocio" content="unidadeNegocioInput" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_-YQ2EC-nEe-mxbhXQmGY3Q" name="unidadeNegocioInput">
-                <mapping xmi:type="process:ContractInputMapping" xmi:id="_-YQ2ES-nEe-mxbhXQmGY3Q"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_pGBglS8wEe-2S-agflEehA" name="unidadeNegocioInput" content="unidadeNegocioInput" type="TYPE_CONTRACT_INPUT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_ZvGHoDCVEe-h3-8-f_7Vvw" name="unidadeNegocioInput">
+                <mapping xmi:type="process:ContractInputMapping" xmi:id="_ZvGusDCVEe-h3-8-f_7Vvw"/>
               </referencedElements>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_pGBgly8wEe-2S-agflEehA" type="ASSIGNMENT" expression="setUnidade_negocio">
@@ -669,24 +669,24 @@
         </elements>
       </elements>
       <data xmi:type="process:BusinessObjectData" xmi:id="_-HvOoC5mEe-f19IC3dmO7g" name="oportunidadeVenda" dataType="_asDfdBkUEe-yBLl2X56m4w" className="crm.OportunidadeVenda">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_-R7O4C82Ee-2S-agflEehA" name="initOportunidadeVenda()" content="oportunidadeVendaDAO.findByPersistenceId(oportunidadeVendaId)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.OportunidadeVenda">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_6TEngC-VEe-mxbhXQmGY3Q" name="oportunidadeVendaDAO" content="oportunidadeVendaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.OportunidadeVendaDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_6TEngS-VEe-mxbhXQmGY3Q" name="oportunidadeVendaId" type="INTEGER">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_6TEngi-VEe-mxbhXQmGY3Q"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_-R7O4C82Ee-2S-agflEehA" name="OportunidadeVenda.findByPersistenceId" content="oportunidadeVendaDAO.findByPersistenceId(oportunidadeVendaId)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.OportunidadeVenda">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_HH2fsDCVEe-h3-8-f_7Vvw" name="oportunidadeVendaDAO" content="oportunidadeVendaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.OportunidadeVendaDAO" returnTypeFixed="true"/>
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_HH2fsTCVEe-h3-8-f_7Vvw" name="oportunidadeVendaId" type="INTEGER">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_HH2fsjCVEe-h3-8-f_7Vvw"/>
           </referencedElements>
         </defaultValue>
       </data>
       <data xmi:type="process:Data" xmi:id="_APzc8C-cEe-mxbhXQmGY3Q" name="unidade_negocio" dataType="_asDfcRkUEe-yBLl2X56m4w">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_APzc8S-cEe-mxbhXQmGY3Q" name="init_unidade_negocio()" content="unidadeNegocioInput" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_LqKAYC-cEe-mxbhXQmGY3Q" name="unidadeNegocioInput">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_LqKAYS-cEe-mxbhXQmGY3Q"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_APzc8S-cEe-mxbhXQmGY3Q" name="unidadeNegocioInput" content="unidadeNegocioInput" type="TYPE_CONTRACT_INPUT">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_8EqfEDCUEe-h3-8-f_7Vvw" name="unidadeNegocioInput">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_8EqfETCUEe-h3-8-f_7Vvw"/>
           </referencedElements>
         </defaultValue>
       </data>
       <data xmi:type="process:Data" xmi:id="_BU9uMC-cEe-mxbhXQmGY3Q" name="cliente_contacto" dataType="_asDfcRkUEe-yBLl2X56m4w">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_BU9uMS-cEe-mxbhXQmGY3Q" name="init_cliente_contacto()" content="clienteContactoInput" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_KF70kC-cEe-mxbhXQmGY3Q" name="clienteContactoInput">
-            <mapping xmi:type="process:ContractInputMapping" xmi:id="_KF70kS-cEe-mxbhXQmGY3Q"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_BU9uMS-cEe-mxbhXQmGY3Q" name="clienteContactoInput" content="clienteContactoInput" type="TYPE_CONTRACT_INPUT">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_9gx3wDCUEe-h3-8-f_7Vvw" name="clienteContactoInput">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_9gx3wTCUEe-h3-8-f_7Vvw"/>
           </referencedElements>
         </defaultValue>
       </data>
@@ -721,7 +721,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_m3az8CQMEe-tg7y1lld14w" name="não" target="_p9_jUCQMEe-tg7y1lld14w" source="_wdHi4CQMEe-tg7y1lld14w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_m3az8SQMEe-tg7y1lld14w"/>
         <condition xmi:type="expression:Expression" xmi:id="_m3az8iQMEe-tg7y1lld14w" name="newScript()" content="unidade_negocio == null || unidade_negocio.trim().length() &lt;= 0" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_F4jQcDCUEe-h3-8-f_7Vvw" name="unidade_negocio" dataType="_asDfcRkUEe-yBLl2X56m4w"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_M6DH0DCVEe-h3-8-f_7Vvw" name="unidade_negocio" dataType="_asDfcRkUEe-yBLl2X56m4w"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_sW8-wCQMEe-tg7y1lld14w" target="_0lXxsCQMEe-tg7y1lld14w" source="_p9_jUCQMEe-tg7y1lld14w">
