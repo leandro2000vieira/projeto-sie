@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "3b7e4711-77b3-46fd-b5ec-10d6527425f6",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718986192663,
+  "lastUpdate" : 1719077699602,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -221,7 +221,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!solucao.nome"
+                          "value" : "!solucao.especificacoes"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -229,11 +229,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Nome"
+                          "value" : "Especificacoes"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{solucao.nome}}"
+                          "value" : "{{solucao.especificacoes}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -256,7 +256,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "e89c8178-c759-410d-9c67-c92d5723bcec",
+                      "reference" : "91e0017f-f8d0-4608-9cdf-e88e8a4831e1",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
@@ -282,7 +282,7 @@
                         },
                         "hidden" : {
                           "type" : "expression",
-                          "value" : "!solucao.id_ov"
+                          "value" : "!solucao.requisitos"
                         },
                         "cssClasses" : {
                           "type" : "constant",
@@ -290,11 +290,11 @@
                         },
                         "label" : {
                           "type" : "interpolation",
-                          "value" : "Id_ov"
+                          "value" : "Requisitos"
                         },
                         "text" : {
                           "type" : "interpolation",
-                          "value" : "{{solucao.id_ov}}"
+                          "value" : "{{solucao.requisitos}}"
                         },
                         "alignment" : {
                           "type" : "constant",
@@ -317,7 +317,7 @@
                           "value" : 4
                         }
                       },
-                      "reference" : "91e0017f-f8d0-4608-9cdf-e88e8a4831e1",
+                      "reference" : "e89c8178-c759-410d-9c67-c92d5723bcec",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""

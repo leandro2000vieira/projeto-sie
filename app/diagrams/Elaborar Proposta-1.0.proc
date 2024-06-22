@@ -99,7 +99,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_EHr2Ry8UEe-mE6baM17d3w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_EHr2Ri8UEe-mE6baM17d3w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_HTiuSS8UEe-mE6baM17d3w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_ErvAkDCrEe-h3-8-f_7Vvw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_xqAaEDDAEe-OqMCSj6OtjA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_HTiuSC8UEe-mE6baM17d3w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_HTiuSy8UEe-mE6baM17d3w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -158,10 +158,10 @@
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_o-4Sdi8SEe-mE6baM17d3w" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_o-4Sdy8SEe-mE6baM17d3w" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </overviewFormMapping>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_KRosgC8TEe-mE6baM17d3w" name="Sim" target="_NFEdcC8TEe-mE6baM17d3w" source="_Jog3AC8TEe-mE6baM17d3w" isDefault="true">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_KRosgC8TEe-mE6baM17d3w" name="Sim" target="_NFEdcC8TEe-mE6baM17d3w" source="_Jog3AC8TEe-mE6baM17d3w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_KRosgS8TEe-mE6baM17d3w"/>
         <condition xmi:type="expression:Expression" xmi:id="_KRosgi8TEe-mE6baM17d3w" name="newScript()" content="oportunidadeVenda.tipo_venda == &quot;Soluções&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_bhlHADCXEe-h3-8-f_7Vvw" name="oportunidadeVenda" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.OportunidadeVenda"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_LQQucDC0Ee-OqMCSj6OtjA" name="oportunidadeVenda" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.OportunidadeVenda"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_PTomxC8TEe-mE6baM17d3w" target="_PnW0AC8TEe-mE6baM17d3w" source="_NFEdcC8TEe-mE6baM17d3w">
@@ -170,8 +170,8 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_QjazoC8TEe-mE6baM17d3w" name="Não" target="_PnW0AC8TEe-mE6baM17d3w" source="_Jog3AC8TEe-mE6baM17d3w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_QjazoS8TEe-mE6baM17d3w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_Qjazoi8TEe-mE6baM17d3w" name="newScript()" content="oportunidadeVenda.tipo_venda != &quot;solucoes&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_NBucMC_cEe-eOYEADm-lRw" name="oportunidadeVenda" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.OportunidadeVenda"/>
+        <condition xmi:type="expression:Expression" xmi:id="_Qjazoi8TEe-mE6baM17d3w" name="newScript()" content="oportunidadeVenda.tipo_venda != &quot;Soluções&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_J8fZcDC0Ee-OqMCSj6OtjA" name="oportunidadeVenda" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.OportunidadeVenda"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_UtZgwC8TEe-mE6baM17d3w" target="_VtuVUC8TEe-mE6baM17d3w" source="_PnW0AC8TEe-mE6baM17d3w">
@@ -200,14 +200,14 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_5RZCIy8TEe-mE6baM17d3w" name="Sim" target="_9P6GIC8TEe-mE6baM17d3w" source="_yqTZYC8TEe-mE6baM17d3w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_5RZCJC8TEe-mE6baM17d3w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_5RZCJS8TEe-mE6baM17d3w" name="newScript()" content="oportunidadeVenda.tipo_venda == &quot;solucoes&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_bv3EkC_cEe-eOYEADm-lRw" name="oportunidadeVenda" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.OportunidadeVenda"/>
+        <condition xmi:type="expression:Expression" xmi:id="_5RZCJS8TEe-mE6baM17d3w" name="newScript()" content="oportunidadeVenda.tipo_venda == &quot;Soluções&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_jb0AkDDBEe-OqMCSj6OtjA" name="oportunidadeVenda" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.OportunidadeVenda"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_EHsdUC8UEe-mE6baM17d3w" name="Não" target="_HTiHMC8UEe-mE6baM17d3w" source="_yqTZYC8TEe-mE6baM17d3w">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_EHsdUS8UEe-mE6baM17d3w"/>
-        <condition xmi:type="expression:Expression" xmi:id="_EHsdUi8UEe-mE6baM17d3w" name="newScript()" content="oportunidadeVenda.tipo_venda != &quot;solucoes&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_crPHsC_cEe-eOYEADm-lRw" name="oportunidadeVenda" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.OportunidadeVenda"/>
+        <condition xmi:type="expression:Expression" xmi:id="_EHsdUi8UEe-mE6baM17d3w" name="newScript()" content="oportunidadeVenda.tipo_venda != &quot;Soluções&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_mjrJYDDBEe-OqMCSj6OtjA" name="oportunidadeVenda" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.OportunidadeVenda"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_J0dy4i8UEe-mE6baM17d3w" target="_J0dL0C8UEe-mE6baM17d3w" source="_9P6GIC8TEe-mE6baM17d3w">
@@ -413,7 +413,7 @@
               <referencedElements xmi:type="process:Data" xmi:id="_YXSVgC_4Ee-eOYEADm-lRw" name="id_solucao" dataType="_o-4Sji8SEe-mE6baM17d3w"/>
             </processSource>
           </inputMappings>
-          <calledActivityName xmi:type="expression:Expression" xmi:id="_fQQBMy8jEe-V9dNd4dxEiQ" name="Optar por uma soluçao" content="Optar por uma soluçao" returnTypeFixed="true"/>
+          <calledActivityName xmi:type="expression:Expression" xmi:id="_fQQBMy8jEe-V9dNd4dxEiQ" name="Obter Informações" content="Obter Informações" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_fQQBNC8jEe-V9dNd4dxEiQ" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
         <elements xmi:type="process:XORGateway" xmi:id="_guoqwC8jEe-V9dNd4dxEiQ" name="Gateway4" outgoing="_pstZBy8jEe-V9dNd4dxEiQ" incoming="_gesxUi8jEe-V9dNd4dxEiQ _lkGk4C8jEe-V9dNd4dxEiQ">
@@ -470,7 +470,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_ekfHYS8jEe-V9dNd4dxEiQ" name="Sim" target="_fQPaIC8jEe-V9dNd4dxEiQ" source="_deS7YC8jEe-V9dNd4dxEiQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_ekfHYi8jEe-V9dNd4dxEiQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_ekfHYy8jEe-V9dNd4dxEiQ" name="newScript()" content="solucao.necessario_fornecedores" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_lbP0sC_wEe-eOYEADm-lRw" name="solucao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Solucao"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_rwkhgDDAEe-OqMCSj6OtjA" name="solucao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Solucao"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_gesxUi8jEe-V9dNd4dxEiQ" target="_guoqwC8jEe-V9dNd4dxEiQ" source="_fQPaIC8jEe-V9dNd4dxEiQ">
@@ -480,12 +480,12 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_lkGk4C8jEe-V9dNd4dxEiQ" name="Não" target="_guoqwC8jEe-V9dNd4dxEiQ" source="_deS7YC8jEe-V9dNd4dxEiQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_lkGk4S8jEe-V9dNd4dxEiQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_lkGk4i8jEe-V9dNd4dxEiQ" name="newScript()" content="!solucao.necessario_fornecedores" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ocpJIC_wEe-eOYEADm-lRw" name="solucao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Solucao"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_sjX3cDDAEe-OqMCSj6OtjA" name="solucao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Solucao"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_pstZBy8jEe-V9dNd4dxEiQ" target="_pssx8C8jEe-V9dNd4dxEiQ" source="_guoqwC8jEe-V9dNd4dxEiQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_psuAEC8jEe-V9dNd4dxEiQ"/>
-        <condition xmi:type="expression:Expression" xmi:id="_psuAES8jEe-V9dNd4dxEiQ" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+        <condition xmi:type="expression:Expression" xmi:id="_psuAES8jEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_ycNMkC_PEe-eOYEADm-lRw" name="Gestor de Oportunidade de Venda"/>
       <contract xmi:type="process:Contract" xmi:id="_w_kqAC8gEe-V9dNd4dxEiQ">
@@ -525,18 +525,45 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_026noi8jEe-V9dNd4dxEiQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_026noS8jEe-V9dNd4dxEiQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_026noy8jEe-V9dNd4dxEiQ" name="" content="" returnTypeFixed="true"/>
+          <operations xmi:type="expression:Operation" xmi:id="_B-9a0zC3Ee-OqMCSj6OtjA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_B-9a1DC3Ee-OqMCSj6OtjA" name="solucao" content="solucao" type="TYPE_VARIABLE" returnType="crm.Solucao">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B-9a1TC3Ee-OqMCSj6OtjA" name="solucao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Solucao"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_B-9a1jC3Ee-OqMCSj6OtjA" name="solucaoInput.requisitos" content="solucaoInput?.requisitos" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_B-9a1zC3Ee-OqMCSj6OtjA" name="solucaoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_B-9a2DC3Ee-OqMCSj6OtjA" type="JAVA_METHOD" expression="setRequisitos">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_B-9a2TC3Ee-OqMCSj6OtjA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_B-9a2jC3Ee-OqMCSj6OtjA" name="solucao" content="solucao" type="TYPE_VARIABLE" returnType="crm.Solucao">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_B-9a2zC3Ee-OqMCSj6OtjA" name="solucao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Solucao"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_B-9a3DC3Ee-OqMCSj6OtjA" name="solucaoInput.especificacoes" content="solucaoInput?.especificacoes" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_B-9a3TC3Ee-OqMCSj6OtjA" name="solucaoInput" type="COMPLEX" createMode="false"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_B-9a3jC3Ee-OqMCSj6OtjA" type="JAVA_METHOD" expression="setEspecificacoes">
+              <inputTypes>java.lang.String</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_026npC8jEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_026npS8jEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_026npi8jEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_027OsC8jEe-V9dNd4dxEiQ" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_026npy8jEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_1cVB2S8jEe-V9dNd4dxEiQ" type="NONE">
-            <targetForm xmi:type="expression:Expression" xmi:id="_1cVB2i8jEe-V9dNd4dxEiQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+          <formMapping xmi:type="process:FormMapping" xmi:id="_1cVB2S8jEe-V9dNd4dxEiQ">
+            <targetForm xmi:type="expression:Expression" xmi:id="_1cVB2i8jEe-V9dNd4dxEiQ" name="analisarReqEspForm" content="2b090918-3a53-4e9f-a50c-234c8bab61c0" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_1cVB2C8jEe-V9dNd4dxEiQ"/>
+          <contract xmi:type="process:Contract" xmi:id="_1cVB2C8jEe-V9dNd4dxEiQ">
+            <inputs xmi:type="process:ContractInput" xmi:id="_B-9a0DC3Ee-OqMCSj6OtjA" name="solucaoInput" type="COMPLEX" dataReference="solucao" createMode="false">
+              <inputs xmi:type="process:ContractInput" xmi:id="_B-9a0TC3Ee-OqMCSj6OtjA" name="requisitos" createMode="false"/>
+              <inputs xmi:type="process:ContractInput" xmi:id="_B-9a0jC3Ee-OqMCSj6OtjA" name="especificacoes" createMode="false"/>
+            </inputs>
+          </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_1cVB2y8jEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_4GwAsC8jEe-V9dNd4dxEiQ" name="Escolher equipas tecnicas" outgoing="_7Lp8JC8jEe-V9dNd4dxEiQ" incoming="_3LfSUC8jEe-V9dNd4dxEiQ _MUWicC8kEe-V9dNd4dxEiQ" overrideActorsOfTheLane="false">
+        <elements xmi:type="process:Task" xmi:id="_4GwAsC8jEe-V9dNd4dxEiQ" name="Escolher equipa tecnica" outgoing="_7Lp8JC8jEe-V9dNd4dxEiQ" incoming="_3LfSUC8jEe-V9dNd4dxEiQ _MUWicC8kEe-V9dNd4dxEiQ" overrideActorsOfTheLane="false">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_3LerQS8jEe-V9dNd4dxEiQ" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_3LerQC8jEe-V9dNd4dxEiQ" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_3LerQi8jEe-V9dNd4dxEiQ" name="" content="" returnTypeFixed="true"/>
@@ -544,13 +571,11 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_QxMd8S_kEe-eOYEADm-lRw" name="equipaTecnica" content="equipaTecnica" type="TYPE_VARIABLE" returnType="crm.EquipaTecnica">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_RZ7R4C_kEe-eOYEADm-lRw" name="equipaTecnica" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_QxMd8i_kEe-eOYEADm-lRw" name="newScript()" content="def nome = equipaTecnicaInput?.nome&#xD;&#xA;def existeEquipaTecnica = (crm.EquipaTecnica) equipaTecnicaDAO.findByNome(nome, 0, 1)&#xD;&#xA;if (existeEquipaTecnica == null) {&#xD;&#xA;&#x9;existeEquipaTecnica = new crm.EquipaTecnica()&#xD;&#xA;&#x9;existeEquipaTecnica.nome = nome&#xD;&#xA;&#x9;existeEquipaTecnica.disponibilidade = true&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;listaEquipasTecnicasEscolhidas.add(equipaTecnica)&#xD;&#xA;return existeEquipaTecnica" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.EquipaTecnica">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_tovM0C_rEe-eOYEADm-lRw" name="equipaTecnicaInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_tovM0S_rEe-eOYEADm-lRw" name="equipaTecnicaDAO" content="equipaTecnicaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.EquipaTecnicaDAO" returnTypeFixed="true"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_tovM0i_rEe-eOYEADm-lRw" name="equipaTecnica" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_tovM0y_rEe-eOYEADm-lRw" name="listaEquipasTecnicasEscolhidas" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_QxMd8i_kEe-eOYEADm-lRw" name="newScript()" content="def nome = equipaTecnicaInput?.nome&#xD;&#xA;def et = (crm.EquipaTecnica) equipaTecnicaDAO.findByNome(nome, 0, 1)&#xD;&#xA;if (et == null || et.getNome() == null || et.nome.isEmpty()) {&#xD;&#xA;&#x9;et = new crm.EquipaTecnica()&#xD;&#xA;&#x9;et.setNome(nome)&#xD;&#xA;&#x9;et.setDisponibilidade(true)&#xD;&#xA;}&#xD;&#xA;return et" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.EquipaTecnica">
+              <referencedElements xmi:type="process:ContractInput" xmi:id="_95muADDBEe-OqMCSj6OtjA" name="equipaTecnicaInput" type="COMPLEX" createMode="false"/>
+              <referencedElements xmi:type="expression:Expression" xmi:id="_95muATDBEe-OqMCSj6OtjA" name="equipaTecnicaDAO" content="equipaTecnicaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.EquipaTecnicaDAO" returnTypeFixed="true"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_QxMd8y_kEe-eOYEADm-lRw" type="CREATE_BUSINESS_DATA" expression="setNome">
+            <operator xmi:type="expression:Operator" xmi:id="_QxMd8y_kEe-eOYEADm-lRw" type="ASSIGNMENT" expression="setNome">
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
@@ -565,9 +590,6 @@
           <contract xmi:type="process:Contract" xmi:id="_4GwnyC8jEe-V9dNd4dxEiQ">
             <inputs xmi:type="process:ContractInput" xmi:id="_gdqzUC_jEe-eOYEADm-lRw" name="equipaTecnicaInput" type="COMPLEX" dataReference="equipaTecnica" createMode="false">
               <inputs xmi:type="process:ContractInput" xmi:id="_gdqzUS_jEe-eOYEADm-lRw" name="nome" createMode="false"/>
-            </inputs>
-            <inputs xmi:type="process:ContractInput" xmi:id="_Z7cVEC_mEe-eOYEADm-lRw" name="solucaoIdInput" type="INTEGER">
-              <mapping xmi:type="process:ContractInputMapping" xmi:id="_Z7cVES_mEe-eOYEADm-lRw"/>
             </inputs>
           </contract>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_4Gwnyy8jEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -602,11 +624,21 @@
             <leftOperand xmi:type="expression:Expression" xmi:id="_bwf_8S_rEe-eOYEADm-lRw" name="listaEquipasTecnicasEscolhidas" content="listaEquipasTecnicasEscolhidas" type="TYPE_VARIABLE" returnType="java.util.List">
               <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_zeRc0C_rEe-eOYEADm-lRw" name="listaEquipasTecnicasEscolhidas" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_bwf_8i_rEe-eOYEADm-lRw" name="newScript()" content="for ( crm.EquipaTecnica equipa in listaEquipasTecnicasEscolhidas) {&#xD;&#xA;&#x9;def solucaoEquipaTecnica = new crm.SolucaoEquipaTecnica()&#xD;&#xA;&#x9;solucaoEquipaTecnica.id_equipa_tecnica = equipa.persistenceId&#xD;&#xA;&#x9;solucaoEquipaTecnica.id_solucao = solucao.persistenceId&#xD;&#xA;}" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OUvTgC_tEe-eOYEADm-lRw" name="listaEquipasTecnicasEscolhidas" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_OUvTgS_tEe-eOYEADm-lRw" name="solucao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Solucao"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_bwf_8i_rEe-eOYEADm-lRw" name="newScript()" content="equipaTecnica" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_GIlB8DC_Ee-OqMCSj6OtjA" name="equipaTecnica" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_bwf_8y_rEe-eOYEADm-lRw" type="ASSIGNMENT"/>
+            <operator xmi:type="expression:Operator" xmi:id="_bwf_8y_rEe-eOYEADm-lRw" type="JAVA_METHOD" expression="add">
+              <inputTypes>java.lang.Object</inputTypes>
+            </operator>
+          </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_HPiC8DC_Ee-OqMCSj6OtjA">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_HPiC8TC_Ee-OqMCSj6OtjA" name="equipaTecnica" content="equipaTecnica" type="TYPE_VARIABLE" returnType="crm.EquipaTecnica">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_HtDscDC_Ee-OqMCSj6OtjA" name="equipaTecnica" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_HPiC8jC_Ee-OqMCSj6OtjA" name="newScript()" content="false" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean"/>
+            <operator xmi:type="expression:Operator" xmi:id="_HPiC8zC_Ee-OqMCSj6OtjA" type="JAVA_METHOD" expression="setDisponibilidade">
+              <inputTypes>java.lang.Boolean</inputTypes>
+            </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_BZleBC8kEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_BZleBS8kEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -615,13 +647,8 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_BZleBy8kEe-V9dNd4dxEiQ" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_QvBbEC_hEe-eOYEADm-lRw" name="listaEquipasTecnicas" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_QvBbES_hEe-eOYEADm-lRw" name="init_listaEquipasTecnicas()" content="equipaTecnicaDAO.findAll()" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_j9Kq8C_hEe-eOYEADm-lRw" name="equipaTecnicaDAO" content="equipaTecnicaDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.EquipaTecnicaDAO" returnTypeFixed="true"/>
-        </defaultValue>
-      </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_cIjNMC_jEe-eOYEADm-lRw" name="equipaTecnica" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_cIjNMS_jEe-eOYEADm-lRw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
+        <defaultValue xmi:type="expression:Expression" xmi:id="_cIjNMS_jEe-eOYEADm-lRw" name="init_equipaTecnica()" content="return null" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.EquipaTecnica"/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_EwzjUC_mEe-eOYEADm-lRw" name="solucaoEquipaTecnica" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.SolucaoEquipaTecnica">
         <defaultValue xmi:type="expression:Expression" xmi:id="_EwzjUS_mEe-eOYEADm-lRw" name="" content="" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Object"/>
@@ -637,8 +664,8 @@
       <data xmi:type="process:BusinessObjectData" xmi:id="_B7zaMC_oEe-eOYEADm-lRw" name="listaEquipasTecnicasEscolhidas" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica">
         <defaultValue xmi:type="expression:Expression" xmi:id="_B7zaMS_oEe-eOYEADm-lRw" name="init_listaEquipasTecnicasEscolhidas()" content="List&lt;crm.EquipaTecnica> lista = []&#xD;&#xA;return lista" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List"/>
       </data>
-      <formMapping xmi:type="process:FormMapping" xmi:id="_ua4YXy8jEe-V9dNd4dxEiQ" type="NONE">
-        <targetForm xmi:type="expression:Expression" xmi:id="_ua4YYC8jEe-V9dNd4dxEiQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+      <formMapping xmi:type="process:FormMapping" xmi:id="_ua4YXy8jEe-V9dNd4dxEiQ">
+        <targetForm xmi:type="expression:Expression" xmi:id="_AEyI8DC-Ee-OqMCSj6OtjA" name="checkEquipasTecnicasForm" content="4c72da0b-af56-482d-84dc-5746f149e0e7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
       <overviewFormMapping xmi:type="process:FormMapping" xmi:id="_ua4YYS8jEe-V9dNd4dxEiQ" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_ua4YYi8jEe-V9dNd4dxEiQ" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
@@ -658,7 +685,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_BZmFEy8kEe-V9dNd4dxEiQ" name="Sim" target="_Z_8BQC_rEe-eOYEADm-lRw" source="_7wAmYC8jEe-V9dNd4dxEiQ">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_BZmFFC8kEe-V9dNd4dxEiQ"/>
         <condition xmi:type="expression:Expression" xmi:id="_BZmFFS8kEe-V9dNd4dxEiQ" name="newScript()" content="def indisponibilidade = false&#xD;&#xA;&#xD;&#xA;for ( crm.EquipaTecnica equipa in listaEquipasTecnicasEscolhidas) {&#xD;&#xA;&#x9;if (equipa.disponibilidade == false) {&#xD;&#xA;&#x9;&#x9;indisponibilidade = true&#xD;&#xA;&#x9;&#x9;break&#xD;&#xA;&#x9;}&#xD;&#xA;}&#xD;&#xA;&#xD;&#xA;return !indisponibilidade" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_91fkwC_qEe-eOYEADm-lRw" name="listaEquipasTecnicasEscolhidas" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
+          <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DZ3Y8DC_Ee-OqMCSj6OtjA" name="listaEquipasTecnicasEscolhidas" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_DLdERy8kEe-V9dNd4dxEiQ" target="_EHOI8C8kEe-V9dNd4dxEiQ" source="_Z_8BQC_rEe-eOYEADm-lRw">
@@ -687,7 +714,7 @@
           <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_M34l4C_rEe-eOYEADm-lRw" name="listaEquipasTecnicasEscolhidas" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.EquipaTecnica"/>
         </condition>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_3p9q4C_PEe-eOYEADm-lRw" name="Gestor de Oportunidade de Venda"/>
+      <actors xmi:type="process:Actor" xmi:id="_3p9q4C_PEe-eOYEADm-lRw" name="Gestor de Oportunidade de Venda" initiator="true"/>
       <contract xmi:type="process:Contract" xmi:id="_ua4YYy8jEe-V9dNd4dxEiQ">
         <inputs xmi:type="process:ContractInput" xmi:id="_qI6Q8C_gEe-eOYEADm-lRw" name="id_solucao_input" type="INTEGER">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_qI6Q8S_gEe-eOYEADm-lRw"/>
@@ -1495,7 +1522,7 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_0PnC0TCeEe-h3-8-f_7Vvw"/>
         <condition xmi:type="expression:Expression" xmi:id="_0PnC0jCeEe-h3-8-f_7Vvw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <actors xmi:type="process:Actor" xmi:id="_FjPu4C_QEe-eOYEADm-lRw" name="CRM" initiator="true"/>
+      <actors xmi:type="process:Actor" xmi:id="_FjPu4C_QEe-eOYEADm-lRw" name="CRM"/>
       <contract xmi:type="process:Contract" xmi:id="_DAnUAy8pEe-I_N4FEnk8ug">
         <inputs xmi:type="process:ContractInput" xmi:id="_pp_gQDCkEe-h3-8-f_7Vvw" name="oportunidadeVendaIdInput" type="INTEGER">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_pp_gQTCkEe-h3-8-f_7Vvw"/>
@@ -1805,18 +1832,15 @@
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_S09YkS_8Ee-eOYEADm-lRw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_S09YkC_8Ee-eOYEADm-lRw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_S09Yki_8Ee-eOYEADm-lRw" name="" content="" returnTypeFixed="true"/>
-          <data xmi:type="process:Data" xmi:id="_FQgXADCqEe-h3-8-f_7Vvw" name="ok" dataType="_o-4SjC8SEe-mE6baM17d3w">
-            <defaultValue xmi:type="expression:Expression" xmi:id="_FQgXATCqEe-h3-8-f_7Vvw" content="" returnType="java.lang.Boolean"/>
-          </data>
           <operations xmi:type="expression:Operation" xmi:id="_dhVmQC_9Ee-eOYEADm-lRw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_dhVmQS_9Ee-eOYEADm-lRw" name="ok" content="ok" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="process:Data" xmi:id="_FRl8IDCqEe-h3-8-f_7Vvw" name="ok" dataType="_o-4SjC8SEe-mE6baM17d3w"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dhVmQS_9Ee-eOYEADm-lRw" name="cotacoes" content="cotacoes" type="TYPE_VARIABLE" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_T_xgcDCtEe-OqMCSj6OtjA" name="cotacoes" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Cotacao"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dhVmQi_9Ee-eOYEADm-lRw" name="newScript()" content="def cotacoesList = cotacaoDAO.findAll()&#xD;&#xA;for (cotacao in cotacoesList) {&#xD;&#xA;&#x9;cotacao.estado_cotacao = &quot;Ativo&quot;&#xD;&#xA;}&#xD;&#xA;return true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
-              <referencedElements xmi:type="expression:Expression" xmi:id="_CgR1oDCrEe-h3-8-f_7Vvw" name="cotacaoDAO" content="cotacaoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.CotacaoDAO" returnTypeFixed="true"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dhVmQi_9Ee-eOYEADm-lRw" name="newScript()" content="def lista = (List&lt;crm.Cotacao>) cotacoes&#xD;&#xA;for (cotacao in lista) {&#xD;&#xA;&#x9;cotacao.setEstado_cotacao(&quot;Ativo&quot;)&#xD;&#xA;}&#xD;&#xA;return lista" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_7M0uwDCtEe-OqMCSj6OtjA" name="cotacoes" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Cotacao"/>
             </rightOperand>
-            <operator xmi:type="expression:Operator" xmi:id="_dhVmQy_9Ee-eOYEADm-lRw" type="ASSIGNMENT" expression="setEstado_cotacao">
-              <inputTypes>java.lang.String</inputTypes>
+            <operator xmi:type="expression:Operator" xmi:id="_dhVmQy_9Ee-eOYEADm-lRw" type="ASSIGNMENT" expression="add">
+              <inputTypes>java.lang.Object</inputTypes>
             </operator>
           </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_S09Yky_8Ee-eOYEADm-lRw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
@@ -1826,6 +1850,11 @@
           <completionCondition xmi:type="expression:Expression" xmi:id="_S09Yli_8Ee-eOYEADm-lRw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
         </elements>
       </elements>
+      <data xmi:type="process:BusinessObjectData" xmi:id="_SRO7ADCtEe-OqMCSj6OtjA" name="cotacoes" multiple="true" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Cotacao">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_SRO7ATCtEe-OqMCSj6OtjA" name="init_cotacoes()" content="cotacaoDAO.findByEstado_cotacao(&quot;Rascunho&quot;, 0, 10)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.util.List">
+          <referencedElements xmi:type="expression:Expression" xmi:id="_sDbtwDCtEe-OqMCSj6OtjA" name="cotacaoDAO" content="cotacaoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.CotacaoDAO" returnTypeFixed="true"/>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_F09tAC_8Ee-eOYEADm-lRw">
         <targetForm xmi:type="expression:Expression" xmi:id="_F09tAS_8Ee-eOYEADm-lRw" name="checkCotacoesForm" content="c809a8ca-e810-4599-85e2-07fc53f3aa08" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -2115,7 +2144,7 @@
               <styles xmi:type="notation:DescriptionStyle" xmi:id="____04S8jEe-V9dNd4dxEiQ"/>
               <styles xmi:type="notation:FontStyle" xmi:id="____04i8jEe-V9dNd4dxEiQ" fontName="Cantarell"/>
               <styles xmi:type="notation:LineStyle" xmi:id="____04y8jEe-V9dNd4dxEiQ"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="____05C8jEe-V9dNd4dxEiQ" x="865" y="18"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="____05C8jEe-V9dNd4dxEiQ" x="847" y="10"/>
             </children>
             <children xmi:type="notation:Shape" xmi:id="_EHOwAC8kEe-V9dNd4dxEiQ" type="3008" element="_EHOI8C8kEe-V9dNd4dxEiQ" fontName="Cantarell">
               <children xmi:type="notation:DecorationNode" xmi:id="_EHOwAi8kEe-V9dNd4dxEiQ" visible="false" type="5026">
@@ -3062,7 +3091,7 @@
         <layoutConstraint xmi:type="notation:Location" xmi:id="_L1zOES_8Ee-eOYEADm-lRw" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_L1ynBC_8Ee-eOYEADm-lRw" fontName="Segoe UI"/>
-      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L1ynBS_8Ee-eOYEADm-lRw" points="[-7, 3, -241, 2]$[227, 14, -7, 13]"/>
+      <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L1ynBS_8Ee-eOYEADm-lRw" points="[0, -9, -175, 0]$[160, -9, -15, 0]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L1z1IC_8Ee-eOYEADm-lRw" id="(1.0,0.8)"/>
     </edges>
     <edges xmi:type="notation:Connector" xmi:id="_S09_oi_8Ee-eOYEADm-lRw" type="4001" element="_S09Ymy_8Ee-eOYEADm-lRw" source="_KV9zAC_8Ee-eOYEADm-lRw" target="_S0-BmDCqEe-h3-8-f_7Vvw" roundedBendpointsRadius="10" routing="Rectilinear">

@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "79dd7be2-1614-4fca-b7f7-417f3a049e1c",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718987773918,
+  "lastUpdate" : 1719081276839,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -735,6 +735,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "8a799b60-fd41-4b85-9cc7-6b90e078461b",
@@ -837,8 +858,7 @@
         "\treturn {",
         "\t\t//map equipaTecnica variable to expected task contract input",
         "\t\tequipaTecnicaInput: {",
-        "\t\t\tnome: $data.equipaTecnica.nome !== undefined ? $data.equipaTecnica.nome : null,",
-        "\t\t\tdisponibilidade: $data.equipaTecnica.disponibilidade !== undefined ? $data.equipaTecnica.disponibilidade : null",
+        "\t\t\tnome: $data.equipaTecnica.nome !== undefined ? $data.equipaTecnica.nome : null",
         "\t\t}",
         "\t}",
         "}"
@@ -862,7 +882,7 @@
     "equipaTecnica_1" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"find [crm.EquipaTecnica]\",\"businessObjectName\":\"EquipaTecnica\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"crm.EquipaTecnica\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "{\"displayValue\":\"find [crm.EquipaTecnica]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"crm.EquipaTecnica\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"1000\"}}"
       ],
       "exposed" : false
     },

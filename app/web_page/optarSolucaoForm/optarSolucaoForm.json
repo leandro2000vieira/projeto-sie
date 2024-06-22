@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "9c25781b-7ab1-43ec-8e37-96b76a97235d",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718993084403,
+  "lastUpdate" : 1719082406730,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -245,55 +245,6 @@
                         }
                       },
                       "reference" : "1bd495bd-8070-4b27-8016-664ee8f6bdf1",
-                      "hasValidationError" : false,
-                      "id" : "pbText",
-                      "description" : ""
-                    }
-                  ],
-                  [
-                    {
-                      "type" : "component",
-                      "dimension" : {
-                        "md" : 12,
-                        "sm" : 12,
-                        "xs" : 12,
-                        "lg" : 12
-                      },
-                      "propertyValues" : {
-                        "allowHtml" : {
-                          "type" : "constant",
-                          "value" : true
-                        },
-                        "labelHidden" : {
-                          "type" : "constant",
-                          "value" : false
-                        },
-                        "hidden" : {
-                          "type" : "expression",
-                          "value" : "!solucao.id_ov"
-                        },
-                        "cssClasses" : {
-                          "type" : "constant",
-                          "value" : ""
-                        },
-                        "label" : {
-                          "type" : "interpolation",
-                          "value" : "Id_ov"
-                        },
-                        "text" : {
-                          "type" : "interpolation",
-                          "value" : "{{solucao.id_ov}}"
-                        },
-                        "alignment" : {
-                          "type" : "constant",
-                          "value" : "left"
-                        },
-                        "dimension" : {
-                          "type" : "constant",
-                          "value" : 12
-                        }
-                      },
-                      "reference" : "d4d2ca04-1087-4b62-bad0-4d59bec63f1a",
                       "hasValidationError" : false,
                       "id" : "pbText",
                       "description" : ""
