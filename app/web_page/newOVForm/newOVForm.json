@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "2f99a462-f946-4fd2-987b-d2c65d77cb37",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718974595307,
+  "lastUpdate" : 1719048117813,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -574,121 +574,9 @@
                     "type" : "constant",
                     "value" : false
                   },
-                  "disabled" : {
-                    "type" : "expression",
-                    "value" : "checkBoxOutro"
-                  },
                   "required" : {
                     "type" : "constant",
                     "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "labelHidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Unidades de Negócio"
-                  },
-                  "labelPosition" : {
-                    "type" : "constant",
-                    "value" : "top"
-                  },
-                  "labelWidth" : {
-                    "type" : "constant",
-                    "value" : 4
-                  },
-                  "placeholder" : {
-                    "type" : "interpolation",
-                    "value" : ""
-                  },
-                  "availableValues" : {
-                    "type" : "expression",
-                    "value" : "unidadesDeNegocioList"
-                  },
-                  "displayedKey" : {
-                    "type" : "constant"
-                  },
-                  "returnedKey" : {
-                    "type" : "constant"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "formInput.unidadeNegocioInput"
-                  }
-                },
-                "reference" : "b26a12e4-bef2-4314-971a-c4998a8b20a9",
-                "hasValidationError" : false,
-                "id" : "pbSelect"
-              }
-            ],
-            [
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 2,
-                  "lg" : 6
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "disabled" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "required" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "allowHTML" : {
-                    "type" : "constant",
-                    "value" : false
-                  },
-                  "label" : {
-                    "type" : "interpolation",
-                    "value" : "Outro"
-                  },
-                  "value" : {
-                    "type" : "variable",
-                    "value" : "checkBoxOutro"
-                  }
-                },
-                "reference" : "eb957c6a-b85a-47da-9b6a-58b9043a17cc",
-                "hasValidationError" : false,
-                "id" : "pbCheckbox"
-              },
-              {
-                "type" : "component",
-                "dimension" : {
-                  "xs" : 12,
-                  "sm" : 12,
-                  "md" : 10,
-                  "lg" : 6
-                },
-                "propertyValues" : {
-                  "cssClasses" : {
-                    "type" : "constant",
-                    "value" : ""
-                  },
-                  "hidden" : {
-                    "type" : "expression",
-                    "value" : "!checkBoxOutro"
-                  },
-                  "required" : {
-                    "type" : "expression",
-                    "value" : "checkBoxOutro"
                   },
                   "allowHTML" : {
                     "type" : "constant",
@@ -708,11 +596,11 @@
                   },
                   "labelHidden" : {
                     "type" : "constant",
-                    "value" : true
+                    "value" : false
                   },
                   "label" : {
                     "type" : "interpolation",
-                    "value" : "Default label"
+                    "value" : "Unidades de Negócio"
                   },
                   "labelPosition" : {
                     "type" : "constant",
@@ -980,16 +868,6 @@
       "type" : "urlparameter",
       "value" : [
         "id"
-      ],
-      "exposed" : false
-    },
-    "checkBoxOutro" : {
-      "type" : "json",
-      "value" : [
-        "{",
-        "    \"1\": true,",
-        "    \"2\": false",
-        "}"
       ],
       "exposed" : false
     },

@@ -1,0 +1,1990 @@
+{
+  "id" : "checkAllForm",
+  "name" : "checkAllForm",
+  "type" : "form",
+  "uuid" : "a6fece0d-945b-46fe-a438-397c1812bdda",
+  "modelVersion" : "2.6",
+  "lastUpdate" : 1719055927446,
+  "description" : "Page generated with Bonita UI designer",
+  "rows" : [
+    [
+      {
+        "type" : "formContainer",
+        "dimension" : {
+          "xs" : 12
+        },
+        "propertyValues" : { },
+        "reference" : "cc281fc1-5b05-4e21-adc8-50be868ad68d",
+        "hasValidationError" : false,
+        "id" : "pbFormContainer",
+        "container" : {
+          "type" : "container",
+          "dimension" : {
+            "xs" : 12
+          },
+          "propertyValues" : { },
+          "reference" : "eefb015c-a94a-4242-93ac-2ae40e09e75f",
+          "hasValidationError" : false,
+          "id" : "pbContainer",
+          "rows" : [
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "a2059d24-e852-4f22-a47b-fa43b6469b6c",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "description" : "Auto generate ui for business object \"crm.OportunidadeVenda\"",
+                "rows" : [
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "0b11c92e-8d21-4650-9aa6-cedf6afac433",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "description" : "\"crm.OportunidadeVenda\" object from \"oportunidadeVenda\" variable",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "OportunidadeVenda"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "8222d12c-b1b1-49c1-9e66-dd9f333ba959",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "headers" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "Nome",
+                                  "Descricao",
+                                  "Origem",
+                                  "Status",
+                                  "Gestor_ov",
+                                  "Cliente_id",
+                                  "Unidade_negocio_id",
+                                  "Created_at",
+                                  "Updated_at",
+                                  "Tipo_venda"
+                                ]
+                              },
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "caption" : {
+                                "type" : "constant"
+                              },
+                              "condensed" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "bordered" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "selectedRow" : {
+                                "type" : "variable",
+                                "value" : "oportunidadeVenda_selected"
+                              },
+                              "columnsKey" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "nome",
+                                  "descricao",
+                                  "origem",
+                                  "status",
+                                  "gestor_ov",
+                                  "cliente_id",
+                                  "unidade_negocio_id",
+                                  "created_at",
+                                  "updated_at",
+                                  "tipo_venda"
+                                ]
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "content" : {
+                                "type" : "expression",
+                                "value" : "oportunidadeVenda"
+                              },
+                              "zebraStriping" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "8988666c-b011-4f89-a06f-a001c1a78d6a",
+                            "hasValidationError" : false,
+                            "id" : "pbTable",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 1,
+                              "sm" : 1,
+                              "xs" : 1,
+                              "lg" : 1
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!oportunidadeVenda_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 1
+                              }
+                            },
+                            "reference" : "f04f3025-0c3d-4781-be37-f0e14bb71b38",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [ ]
+                            ]
+                          },
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 11,
+                              "sm" : 11,
+                              "xs" : 11,
+                              "lg" : 11
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!oportunidadeVenda_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 11
+                              }
+                            },
+                            "reference" : "d4953b37-4435-4422-b862-cb5f44f57292",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "description" : "Display \"OportunidadeVenda\" details when a line is selected in the table above",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.nome"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Nome"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.nome"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "7d12d901-abba-4569-84e3-fcf1761ebbee",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.descricao"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Descricao"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.descricao"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "91ded33d-9c4a-4a57-8f0a-c59e717be7e5",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.origem"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Origem"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.origem"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "babcd812-5e84-4857-ab66-35745313be38",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.status"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Status"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.status"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "8cce652f-81b9-479f-960a-f6beed7bdedb",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.gestor_ov"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Gestor_ov"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.gestor_ov"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "806eca82-793d-4004-aada-c9809a036635",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.cliente_id"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Cliente_id"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "number"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.cliente_id"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "45abbd69-b291-45f1-bbd8-d70da0d8d1a8",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.unidade_negocio_id"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Unidade_negocio_id"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "number"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.unidade_negocio_id"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "f789ee3d-5c8b-41c2-9499-8951594c9129",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "showNow" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.created_at"
+                                    },
+                                    "inlineInput" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "dateFormat" : {
+                                      "type" : "constant",
+                                      "value" : "MM/dd/yyyy"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Created_at"
+                                    },
+                                    "type" : {
+                                      "type" : "constant"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "todayLabel" : {
+                                      "type" : "constant",
+                                      "value" : "Today"
+                                    },
+                                    "timePlaceholder" : {
+                                      "type" : "constant",
+                                      "value" : "Enter a time (h:mm:ss a)"
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "showToday" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "timeFormat" : {
+                                      "type" : "constant",
+                                      "value" : "h:mm:ss a"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant",
+                                      "value" : "Enter a date (mm/dd/yyyy)"
+                                    },
+                                    "nowLabel" : {
+                                      "type" : "constant",
+                                      "value" : "Now"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.created_at"
+                                    },
+                                    "withTimeZone" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "52103da1-c22f-43a5-bea5-05b7c75cbbb8",
+                                  "hasValidationError" : false,
+                                  "id" : "pbDateTimePicker",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "showNow" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.updated_at"
+                                    },
+                                    "inlineInput" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "dateFormat" : {
+                                      "type" : "constant",
+                                      "value" : "MM/dd/yyyy"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Updated_at"
+                                    },
+                                    "type" : {
+                                      "type" : "constant"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "todayLabel" : {
+                                      "type" : "constant",
+                                      "value" : "Today"
+                                    },
+                                    "timePlaceholder" : {
+                                      "type" : "constant",
+                                      "value" : "Enter a time (h:mm:ss a)"
+                                    },
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "showToday" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "timeFormat" : {
+                                      "type" : "constant",
+                                      "value" : "h:mm:ss a"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant",
+                                      "value" : "Enter a date (mm/dd/yyyy)"
+                                    },
+                                    "nowLabel" : {
+                                      "type" : "constant",
+                                      "value" : "Now"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.updated_at"
+                                    },
+                                    "withTimeZone" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "1cc3f651-8c79-4353-86e4-7f62ef90608e",
+                                  "hasValidationError" : false,
+                                  "id" : "pbDateTimePicker",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!oportunidadeVenda_selected.tipo_venda"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Tipo_venda"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "oportunidadeVenda_selected.tipo_venda"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "5e823817-e33e-489b-9e8c-ddd4a04ac4c7",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "e39c2131-8c31-417d-9445-d64d0ad472d1",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "description" : "Auto generate ui for business object \"crm.FichaCliente\"",
+                "rows" : [
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "93947192-78cc-4bfe-884e-5c72ee024ab4",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "description" : "\"crm.FichaCliente\" object from \"fichaCliente\" variable",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "FichaCliente"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "6b38212b-3387-40c1-89db-16432896b3fe",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "headers" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "Nome",
+                                  "Contacto",
+                                  "Gestor_cliente"
+                                ]
+                              },
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "caption" : {
+                                "type" : "constant"
+                              },
+                              "condensed" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "bordered" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "selectedRow" : {
+                                "type" : "variable",
+                                "value" : "fichaCliente_selected"
+                              },
+                              "columnsKey" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "nome",
+                                  "contacto",
+                                  "gestor_cliente"
+                                ]
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "content" : {
+                                "type" : "expression",
+                                "value" : "fichaCliente"
+                              },
+                              "zebraStriping" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "f81f413f-12ae-482c-8dae-5c91b3a0a5de",
+                            "hasValidationError" : false,
+                            "id" : "pbTable",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 1,
+                              "sm" : 1,
+                              "xs" : 1,
+                              "lg" : 1
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!fichaCliente_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 1
+                              }
+                            },
+                            "reference" : "b2a5ec18-9049-4380-b2d2-e435ffb50e3a",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [ ]
+                            ]
+                          },
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 11,
+                              "sm" : 11,
+                              "xs" : 11,
+                              "lg" : 11
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!fichaCliente_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 11
+                              }
+                            },
+                            "reference" : "caae398e-bead-48e3-b40f-297bc2c2b1d9",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "description" : "Display \"FichaCliente\" details when a line is selected in the table above",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!fichaCliente_selected.nome"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Nome"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "fichaCliente_selected.nome"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "346467ba-57d7-42ab-a1d2-0b24e8865ccc",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!fichaCliente_selected.contacto"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Contacto"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "fichaCliente_selected.contacto"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "327c4e12-cf6d-4d4d-8174-6a895578828b",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!fichaCliente_selected.gestor_cliente"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Gestor_cliente"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "fichaCliente_selected.gestor_cliente"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "398eb1da-5806-4036-ac5f-4f50b7b8054d",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "db787c2f-7817-4388-a062-d2ac9971eded",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "description" : "Auto generate ui for business object \"crm.UnidadeNegocio\"",
+                "rows" : [
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "29196e78-1b41-43f1-acd3-fff290b0360a",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "description" : "\"crm.UnidadeNegocio\" object from \"unidadeNegocio\" variable",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "UnidadeNegocio"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "e7522e6d-f25f-401e-9e94-27990ee12210",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "headers" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "Nome",
+                                  "Descricao"
+                                ]
+                              },
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "caption" : {
+                                "type" : "constant"
+                              },
+                              "condensed" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "bordered" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "selectedRow" : {
+                                "type" : "variable",
+                                "value" : "unidadeNegocio_selected"
+                              },
+                              "columnsKey" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "nome",
+                                  "descricao"
+                                ]
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "content" : {
+                                "type" : "expression",
+                                "value" : "unidadeNegocio"
+                              },
+                              "zebraStriping" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "0c540cfa-d021-46df-a250-a9dea704484d",
+                            "hasValidationError" : false,
+                            "id" : "pbTable",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 1,
+                              "sm" : 1,
+                              "xs" : 1,
+                              "lg" : 1
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!unidadeNegocio_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 1
+                              }
+                            },
+                            "reference" : "4e621ea6-97fb-4746-abfd-c884d4dcdb52",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [ ]
+                            ]
+                          },
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 11,
+                              "sm" : 11,
+                              "xs" : 11,
+                              "lg" : 11
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!unidadeNegocio_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 11
+                              }
+                            },
+                            "reference" : "f92dd18e-9938-4869-a4f3-ca9b530d4b6d",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "description" : "Display \"UnidadeNegocio\" details when a line is selected in the table above",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!unidadeNegocio_selected.nome"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Nome"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "unidadeNegocio_selected.nome"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "2265455f-cc44-4d76-9a96-77e687f39055",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!unidadeNegocio_selected.descricao"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Descricao"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "unidadeNegocio_selected.descricao"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "669157cd-9fc4-4b2a-b488-ee3517be9280",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ]
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "removeItem" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "buttonStyle" : {
+                    "type" : "constant",
+                    "value" : "primary"
+                  },
+                  "label" : {
+                    "type" : "interpolation",
+                    "value" : "Submit"
+                  },
+                  "dataToSend" : {
+                    "type" : "expression",
+                    "value" : "formOutput"
+                  },
+                  "dataFromError" : {
+                    "type" : "variable",
+                    "value" : "formOutput._submitError"
+                  },
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "collectionPosition" : {
+                    "type" : "constant"
+                  },
+                  "targetUrlOnSuccess" : {
+                    "type" : "interpolation",
+                    "value" : "/bonita"
+                  },
+                  "action" : {
+                    "type" : "constant",
+                    "value" : "Start process"
+                  },
+                  "collectionToModify" : {
+                    "type" : "variable"
+                  },
+                  "valueToAdd" : {
+                    "type" : "expression"
+                  },
+                  "disabled" : {
+                    "type" : "expression",
+                    "value" : "$form.$invalid"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "center"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "5d757c98-6e66-4dfe-b815-626e44672e78",
+                "hasValidationError" : false,
+                "id" : "pbButton",
+                "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "component",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "allowHTML" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "allowHtml" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "labelHidden" : {
+                    "type" : "constant",
+                    "value" : true
+                  },
+                  "hidden" : {
+                    "type" : "expression",
+                    "value" : "!formOutput._submitError.message"
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : "alert alert-danger col-lg-6 col-lg-offset-3"
+                  },
+                  "label" : {
+                    "type" : "interpolation"
+                  },
+                  "text" : {
+                    "type" : "interpolation",
+                    "value" : "<strong>Debug message</strong>\n<br/>\n{{formOutput._submitError.message}}\n{{submit_errors_list}}"
+                  },
+                  "alignment" : {
+                    "type" : "constant",
+                    "value" : "left"
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "af09fbbf-4fae-47f9-a12f-74e37ab1c28b",
+                "hasValidationError" : false,
+                "id" : "pbText",
+                "description" : ""
+              }
+            ]
+          ]
+        }
+      }
+    ]
+  ],
+  "variables" : {
+    "formInput" : {
+      "type" : "json",
+      "value" : [
+        "{ }"
+      ],
+      "exposed" : false
+    },
+    "submit_errors_list" : {
+      "type" : "expression",
+      "value" : [
+        "if($data.formOutput && $data.formOutput._submitError && $data.formOutput._submitError.explanations){",
+        "\tconst liElements = $data.formOutput._submitError.explanations",
+        "\t\t.filter(cause => cause !== null)",
+        "\t\t.map(cause => \"<li>\" + cause + \"</li>\")",
+        "\t\t.join('');",
+        "\tif(liElements){",
+        "\t\treturn \"<ul>\" + liElements + \"</ul>\";",
+        "\t}",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "formOutput" : {
+      "type" : "expression",
+      "value" : [
+        "return {",
+        "",
+        "}"
+      ],
+      "exposed" : false
+    },
+    "oportunidadeVenda" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [crm.OportunidadeVenda]\",\"businessObjectName\":\"OportunidadeVenda\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"crm.OportunidadeVenda\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "oportunidadeVenda_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "fichaCliente" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [crm.FichaCliente]\",\"businessObjectName\":\"FichaCliente\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"crm.FichaCliente\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "fichaCliente_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    },
+    "unidadeNegocio" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [crm.UnidadeNegocio]\",\"businessObjectName\":\"UnidadeNegocio\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"crm.UnidadeNegocio\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "unidadeNegocio_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
+      ],
+      "exposed" : false
+    }
+  },
+  "assets" : [
+    {
+      "id" : "73da633a-5321-409c-99da-df77a1ce20a9",
+      "name" : "style.css",
+      "type" : "css",
+      "order" : 0,
+      "external" : false
+    },
+    {
+      "id" : "a0bf5c9b-79b3-4479-bcba-41a214077e4f",
+      "name" : "localization.json",
+      "type" : "json",
+      "order" : 0,
+      "external" : false
+    }
+  ],
+  "inactiveAssets" : [ ],
+  "webResources" : [ ],
+  "hasValidationError" : false
+}

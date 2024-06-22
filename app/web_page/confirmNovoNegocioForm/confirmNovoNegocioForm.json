@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "64e30fd9-7532-4cd1-b258-108e34e00ddf",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1718981070266,
+  "lastUpdate" : 1719053329806,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -169,6 +169,360 @@
                 "hasValidationError" : false,
                 "id" : "pbTitle",
                 "description" : ""
+              }
+            ],
+            [
+              {
+                "type" : "container",
+                "dimension" : {
+                  "md" : 12,
+                  "sm" : 12,
+                  "xs" : 12,
+                  "lg" : 12
+                },
+                "propertyValues" : {
+                  "repeatedCollection" : {
+                    "type" : "variable"
+                  },
+                  "hidden" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "cssClasses" : {
+                    "type" : "constant",
+                    "value" : ""
+                  },
+                  "dimension" : {
+                    "type" : "constant",
+                    "value" : 12
+                  }
+                },
+                "reference" : "be9486b9-8f59-4302-894c-a4bde6f7a791",
+                "hasValidationError" : false,
+                "id" : "pbContainer",
+                "description" : "Auto generate ui for business object \"crm.UnidadeNegocio\"",
+                "rows" : [
+                  [
+                    {
+                      "type" : "container",
+                      "dimension" : {
+                        "xs" : 12
+                      },
+                      "propertyValues" : { },
+                      "reference" : "00868d56-2d12-4fd0-98b3-8e82216e96f6",
+                      "hasValidationError" : false,
+                      "id" : "pbContainer",
+                      "description" : "\"crm.UnidadeNegocio\" object from \"unidadeNegocio_1\" variable",
+                      "rows" : [
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "level" : {
+                                "type" : "constant",
+                                "value" : "Level 4"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "text" : {
+                                "type" : "interpolation",
+                                "value" : "UnidadeNegocio"
+                              },
+                              "alignment" : {
+                                "type" : "constant",
+                                "value" : "left"
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              }
+                            },
+                            "reference" : "8b9ff05c-accd-4b1e-a222-de08e18f7be9",
+                            "hasValidationError" : false,
+                            "id" : "pbTitle",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "component",
+                            "dimension" : {
+                              "md" : 12,
+                              "sm" : 12,
+                              "xs" : 12,
+                              "lg" : 12
+                            },
+                            "propertyValues" : {
+                              "headers" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "Nome",
+                                  "Descricao"
+                                ]
+                              },
+                              "allowHtml" : {
+                                "type" : "constant",
+                                "value" : true
+                              },
+                              "hidden" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "caption" : {
+                                "type" : "constant"
+                              },
+                              "condensed" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "bordered" : {
+                                "type" : "constant",
+                                "value" : false
+                              },
+                              "selectedRow" : {
+                                "type" : "variable",
+                                "value" : "unidadeNegocio_1_selected"
+                              },
+                              "columnsKey" : {
+                                "type" : "constant",
+                                "value" : [
+                                  "nome",
+                                  "descricao"
+                                ]
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 12
+                              },
+                              "content" : {
+                                "type" : "expression",
+                                "value" : "unidadeNegocio_1"
+                              },
+                              "zebraStriping" : {
+                                "type" : "constant",
+                                "value" : true
+                              }
+                            },
+                            "reference" : "a38af114-aeb2-474d-b6d9-ef483146b9af",
+                            "hasValidationError" : false,
+                            "id" : "pbTable",
+                            "description" : ""
+                          }
+                        ],
+                        [
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 1,
+                              "sm" : 1,
+                              "xs" : 1,
+                              "lg" : 1
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!unidadeNegocio_1_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 1
+                              }
+                            },
+                            "reference" : "21fc6ae5-43f4-41c3-aa78-afa75648b654",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "rows" : [
+                              [ ]
+                            ]
+                          },
+                          {
+                            "type" : "container",
+                            "dimension" : {
+                              "md" : 11,
+                              "sm" : 11,
+                              "xs" : 11,
+                              "lg" : 11
+                            },
+                            "propertyValues" : {
+                              "repeatedCollection" : {
+                                "type" : "variable"
+                              },
+                              "hidden" : {
+                                "type" : "expression",
+                                "value" : "!unidadeNegocio_1_selected"
+                              },
+                              "cssClasses" : {
+                                "type" : "constant",
+                                "value" : ""
+                              },
+                              "dimension" : {
+                                "type" : "constant",
+                                "value" : 11
+                              }
+                            },
+                            "reference" : "45599607-bf3b-4ebf-975a-6e2708e358ca",
+                            "hasValidationError" : false,
+                            "id" : "pbContainer",
+                            "description" : "Display \"UnidadeNegocio\" details when a line is selected in the table above",
+                            "rows" : [
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!unidadeNegocio_1_selected.nome"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Nome"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "unidadeNegocio_1_selected.nome"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "13268efd-3c3d-48aa-b949-c16692a70d24",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ],
+                              [
+                                {
+                                  "type" : "component",
+                                  "dimension" : {
+                                    "md" : 12,
+                                    "sm" : 12,
+                                    "xs" : 12,
+                                    "lg" : 12
+                                  },
+                                  "propertyValues" : {
+                                    "labelHidden" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    },
+                                    "hidden" : {
+                                      "type" : "expression",
+                                      "value" : "!unidadeNegocio_1_selected.descricao"
+                                    },
+                                    "labelPosition" : {
+                                      "type" : "constant",
+                                      "value" : "top"
+                                    },
+                                    "cssClasses" : {
+                                      "type" : "constant",
+                                      "value" : ""
+                                    },
+                                    "labelWidth" : {
+                                      "type" : "constant",
+                                      "value" : 1
+                                    },
+                                    "readOnly" : {
+                                      "type" : "constant",
+                                      "value" : true
+                                    },
+                                    "label" : {
+                                      "type" : "interpolation",
+                                      "value" : "Descricao"
+                                    },
+                                    "placeholder" : {
+                                      "type" : "constant"
+                                    },
+                                    "type" : {
+                                      "type" : "constant",
+                                      "value" : "text"
+                                    },
+                                    "dimension" : {
+                                      "type" : "constant",
+                                      "value" : 12
+                                    },
+                                    "value" : {
+                                      "type" : "variable",
+                                      "value" : "unidadeNegocio_1_selected.descricao"
+                                    },
+                                    "required" : {
+                                      "type" : "constant",
+                                      "value" : false
+                                    }
+                                  },
+                                  "reference" : "575e17d4-5335-4fa4-b6a2-de91504b376c",
+                                  "hasValidationError" : false,
+                                  "id" : "pbInput",
+                                  "description" : ""
+                                }
+                              ]
+                            ]
+                          }
+                        ]
+                      ]
+                    }
+                  ]
+                ]
               }
             ],
             [
@@ -581,6 +935,20 @@
         "    \"1\": true,",
         "    \"2\": false",
         "}"
+      ],
+      "exposed" : false
+    },
+    "unidadeNegocio_1" : {
+      "type" : "businessdata",
+      "value" : [
+        "{\"displayValue\":\"find [crm.UnidadeNegocio]\",\"businessObjectName\":\"UnidadeNegocio\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"crm.UnidadeNegocio\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+      ],
+      "exposed" : false
+    },
+    "unidadeNegocio_1_selected" : {
+      "type" : "constant",
+      "value" : [
+        ""
       ],
       "exposed" : false
     }
