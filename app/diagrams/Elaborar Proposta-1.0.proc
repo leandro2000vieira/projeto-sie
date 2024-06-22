@@ -99,7 +99,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_EHr2Ry8UEe-mE6baM17d3w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_EHr2Ri8UEe-mE6baM17d3w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_HTiuSS8UEe-mE6baM17d3w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_xqAaEDDAEe-OqMCSj6OtjA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_UNGTUDDEEe-OqMCSj6OtjA" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_HTiuSC8UEe-mE6baM17d3w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_HTiuSy8UEe-mE6baM17d3w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -1172,9 +1172,9 @@
         <defaultValue xmi:type="expression:Expression" xmi:id="_HsznIS_2Ee-eOYEADm-lRw" content=""/>
       </data>
       <data xmi:type="process:BusinessObjectData" xmi:id="_RyytwC_4Ee-eOYEADm-lRw" name="solucao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Solucao">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_RyytwS_4Ee-eOYEADm-lRw" name="init_solucao()" content="solucaoDAO.findByPersistenceId(id_contrato_input)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.Solucao">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_RyytwS_4Ee-eOYEADm-lRw" name="init_solucao()" content="solucaoDAO.findByPersistenceId(id_solucao_input)" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.Solucao">
           <referencedElements xmi:type="expression:Expression" xmi:id="_Ryytwi_4Ee-eOYEADm-lRw" name="solucaoDAO" content="solucaoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.SolucaoDAO" returnTypeFixed="true"/>
-          <referencedElements xmi:type="process:ContractInput" xmi:id="_Ryytwy_4Ee-eOYEADm-lRw" name="id_contrato_input" type="INTEGER">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_Ryytwy_4Ee-eOYEADm-lRw" name="id_solucao_input" type="INTEGER">
             <mapping xmi:type="process:ContractInputMapping" xmi:id="_RyytxC_4Ee-eOYEADm-lRw"/>
           </referencedElements>
         </defaultValue>
@@ -1188,7 +1188,7 @@
       <connections xmi:type="process:SequenceFlow" xmi:id="_e37D8C8nEe-I_N4FEnk8ug" name="Sim" target="_g1eVwC8nEe-I_N4FEnk8ug" source="_doh4oC8nEe-I_N4FEnk8ug">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_e37D8S8nEe-I_N4FEnk8ug"/>
         <condition xmi:type="expression:Expression" xmi:id="_e37D8i8nEe-I_N4FEnk8ug" name="newScript()" content="contactarFornecedorDiretamente" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_819rUC_zEe-eOYEADm-lRw" name="contactarFornecedorDiretamente" dataType="_o-4SjC8SEe-mE6baM17d3w"/>
+          <referencedElements xmi:type="process:Data" xmi:id="_0CB6ADDDEe-OqMCSj6OtjA" name="contactarFornecedorDiretamente" dataType="_o-4SjC8SEe-mE6baM17d3w"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_i9KbAi8nEe-I_N4FEnk8ug" target="_04r2QC_0Ee-eOYEADm-lRw" source="_g1eVwC8nEe-I_N4FEnk8ug">
@@ -1197,8 +1197,8 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_yc0m8C8nEe-I_N4FEnk8ug" target="_wdvEEC8nEe-I_N4FEnk8ug" source="_04r2QC_0Ee-eOYEADm-lRw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_yc0m8S8nEe-I_N4FEnk8ug"/>
-        <condition xmi:type="expression:Expression" xmi:id="_MSk1MC_yEe-eOYEADm-lRw" name="newScript()" content="acaoContacto == &quot;esperar&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_QEE-oC_3Ee-eOYEADm-lRw" name="acaoContacto" dataType="_o-4SkS8SEe-mE6baM17d3w"/>
+        <condition xmi:type="expression:Expression" xmi:id="_MSk1MC_yEe-eOYEADm-lRw" name="newScript()" content="acaoContacto == &quot;Esperar&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_IHsAsDDEEe-OqMCSj6OtjA" name="acaoContacto" dataType="_o-4SkS8SEe-mE6baM17d3w"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_zethwC8nEe-I_N4FEnk8ug" target="_g1eVwC8nEe-I_N4FEnk8ug" source="_wdvEEC8nEe-I_N4FEnk8ug">
@@ -1237,8 +1237,8 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_CXoPAC_yEe-eOYEADm-lRw" target="_CXmZ0C_yEe-eOYEADm-lRw" source="_04r2QC_0Ee-eOYEADm-lRw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_CXoPAS_yEe-eOYEADm-lRw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_MSk1Mi_yEe-eOYEADm-lRw" name="newScript()" content="acaoContacto == &quot;cancelar&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_QlUDcC_3Ee-eOYEADm-lRw" name="acaoContacto" dataType="_o-4SkS8SEe-mE6baM17d3w"/>
+        <condition xmi:type="expression:Expression" xmi:id="_MSk1Mi_yEe-eOYEADm-lRw" name="newScript()" content="acaoContacto == &quot;Cancelar&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_GuUaADDEEe-OqMCSj6OtjA" name="acaoContacto" dataType="_o-4SkS8SEe-mE6baM17d3w"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_whNKky_yEe-eOYEADm-lRw" target="_yGH58C_yEe-eOYEADm-lRw" source="_Z7gNQC8nEe-I_N4FEnk8ug">
@@ -1251,8 +1251,8 @@
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_HqxcSy_1Ee-eOYEADm-lRw" target="_Hqw1MC_1Ee-eOYEADm-lRw" source="_04r2QC_0Ee-eOYEADm-lRw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_HqxcTC_1Ee-eOYEADm-lRw"/>
-        <condition xmi:type="expression:Expression" xmi:id="_HqxcTS_1Ee-eOYEADm-lRw" name="newScript()" content="acaoContacto == &quot;contactar&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
-          <referencedElements xmi:type="process:Data" xmi:id="_LkOIIC_3Ee-eOYEADm-lRw" name="acaoContacto" dataType="_o-4SkS8SEe-mE6baM17d3w"/>
+        <condition xmi:type="expression:Expression" xmi:id="_HqxcTS_1Ee-eOYEADm-lRw" name="newScript()" content="acaoContacto == &quot;Contactar&quot;" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean" returnTypeFixed="true">
+          <referencedElements xmi:type="process:Data" xmi:id="_FlABgDDEEe-OqMCSj6OtjA" name="acaoContacto" dataType="_o-4SkS8SEe-mE6baM17d3w"/>
         </condition>
       </connections>
       <connections xmi:type="process:SequenceFlow" xmi:id="_JnoKgC_1Ee-eOYEADm-lRw" target="_BMbjAC_5Ee-eOYEADm-lRw" source="_Hqw1MC_1Ee-eOYEADm-lRw">
@@ -1262,7 +1262,7 @@
       <actors xmi:type="process:Actor" xmi:id="_CqziIC_QEe-eOYEADm-lRw" name="Gestor da Oportunidade de Venda" initiator="true"/>
       <actors xmi:type="process:Actor" xmi:id="_ELR2YC_QEe-eOYEADm-lRw" name="Area comercial"/>
       <contract xmi:type="process:Contract" xmi:id="_G1tdoy8mEe-I_N4FEnk8ug">
-        <inputs xmi:type="process:ContractInput" xmi:id="_K9xWsC_4Ee-eOYEADm-lRw" name="id_contrato_input" type="INTEGER">
+        <inputs xmi:type="process:ContractInput" xmi:id="_K9xWsC_4Ee-eOYEADm-lRw" name="id_solucao_input" type="INTEGER">
           <mapping xmi:type="process:ContractInputMapping" xmi:id="_K9xWsS_4Ee-eOYEADm-lRw"/>
         </inputs>
       </contract>
