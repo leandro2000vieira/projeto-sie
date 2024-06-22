@@ -4,7 +4,7 @@
   "type" : "form",
   "uuid" : "c809a8ca-e810-4599-85e2-07fc53f3aa08",
   "modelVersion" : "2.6",
-  "lastUpdate" : 1719068677250,
+  "lastUpdate" : 1719072154618,
   "description" : "Page generated with Bonita UI designer",
   "rows" : [
     [
@@ -652,6 +652,27 @@
                   "dimension" : {
                     "type" : "constant",
                     "value" : 12
+                  },
+                  "assign" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "url" : {
+                    "type" : "interpolation"
+                  },
+                  "responseStatusCode" : {
+                    "type" : "variable"
+                  },
+                  "dataFromSuccess" : {
+                    "type" : "variable"
+                  },
+                  "closeOnSuccess" : {
+                    "type" : "constant",
+                    "value" : false
+                  },
+                  "modalId" : {
+                    "type" : "constant",
+                    "value" : ""
                   }
                 },
                 "reference" : "9597a1d9-cc52-4a8c-8008-bdc156e0380b",
@@ -752,7 +773,7 @@
     "cotacao" : {
       "type" : "businessdata",
       "value" : [
-        "{\"displayValue\":\"find [crm.Cotacao]\",\"businessObjectName\":\"Cotacao\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"crm.Cotacao\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10\"}}"
+        "{\"displayValue\":\"find [crm.Cotacao]\",\"businessObjectName\":\"undefined\",\"query\":{\"name\":\"find\",\"displayName\":\"find\"},\"id\":\"crm.Cotacao\",\"filters\":[],\"pagination\":{\"p\":\"0\",\"c\":\"10000\"}}"
       ],
       "exposed" : false
     },

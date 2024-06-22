@@ -44,6 +44,11 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_UtY5tS8TEe-mE6baM17d3w" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_UtY5ty8TEe-mE6baM17d3w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_UtY5ti8TEe-mE6baM17d3w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
+          <inputMappings xmi:type="process:InputMapping" xmi:id="_siO4sDCkEe-h3-8-f_7Vvw" subprocessTarget="oportunidadeVendaIdInput">
+            <processSource xmi:type="expression:Expression" xmi:id="_siO4sTCkEe-h3-8-f_7Vvw" name="id_oportunidade_venda" content="id_oportunidade_venda" type="TYPE_VARIABLE" returnType="java.lang.Integer">
+              <referencedElements xmi:type="process:Data" xmi:id="_tHxOsDCkEe-h3-8-f_7Vvw" name="id_oportunidade_venda" dataType="_o-4Sji8SEe-mE6baM17d3w"/>
+            </processSource>
+          </inputMappings>
           <calledActivityName xmi:type="expression:Expression" xmi:id="_Vtu8Yy8TEe-mE6baM17d3w" name="Fazer Cotações" content="Fazer Cotações" returnTypeFixed="true"/>
           <calledActivityVersion xmi:type="expression:Expression" xmi:id="_Vtu8ZC8TEe-mE6baM17d3w" name="1.0" content="1.0" returnTypeFixed="true"/>
         </elements>
@@ -94,7 +99,7 @@
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_EHr2Ry8UEe-mE6baM17d3w" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_EHr2Ri8UEe-mE6baM17d3w" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <formMapping xmi:type="process:FormMapping" xmi:id="_HTiuSS8UEe-mE6baM17d3w">
-            <targetForm xmi:type="expression:Expression" xmi:id="_GlEMoDCeEe-h3-8-f_7Vvw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
+            <targetForm xmi:type="expression:Expression" xmi:id="_ErvAkDCrEe-h3-8-f_7Vvw" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
           </formMapping>
           <contract xmi:type="process:Contract" xmi:id="_HTiuSC8UEe-mE6baM17d3w"/>
           <expectedDuration xmi:type="expression:Expression" xmi:id="_HTiuSy8UEe-mE6baM17d3w" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
@@ -1275,6 +1280,17 @@
               <inputTypes>java.lang.String</inputTypes>
             </operator>
           </operations>
+          <operations xmi:type="expression:Operation" xmi:id="_15Aa0DCkEe-h3-8-f_7Vvw">
+            <leftOperand xmi:type="expression:Expression" xmi:id="_15Aa0TCkEe-h3-8-f_7Vvw" name="cotacao" content="cotacao" type="TYPE_VARIABLE" returnType="crm.Cotacao">
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_2RwSADCkEe-h3-8-f_7Vvw" name="cotacao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Cotacao"/>
+            </leftOperand>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_15Aa0jCkEe-h3-8-f_7Vvw" name="newScript()" content="oportunidadeVendaId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Long">
+              <referencedElements xmi:type="process:Data" xmi:id="_5LpQQDCkEe-h3-8-f_7Vvw" name="oportunidadeVendaId" dataType="_o-4Sji8SEe-mE6baM17d3w"/>
+            </rightOperand>
+            <operator xmi:type="expression:Operator" xmi:id="_15Aa0zCkEe-h3-8-f_7Vvw" type="JAVA_METHOD" expression="setId_ov">
+              <inputTypes>java.lang.Long</inputTypes>
+            </operator>
+          </operations>
           <loopCondition xmi:type="expression:Expression" xmi:id="_GNnbcy8pEe-I_N4FEnk8ug" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
           <loopMaximum xmi:type="expression:Expression" xmi:id="_GNnbdC8pEe-I_N4FEnk8ug" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_GNnbdS8pEe-I_N4FEnk8ug" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
@@ -1290,7 +1306,7 @@
               <referencedElements xmi:type="process:Data" xmi:id="_SoP80C_9Ee-eOYEADm-lRw" name="id_cotacao" dataType="_o-4Sji8SEe-mE6baM17d3w"/>
             </leftOperand>
             <rightOperand xmi:type="expression:Expression" xmi:id="_QUDFki_9Ee-eOYEADm-lRw" name="newScript()" content="cotacao.persistenceId" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Integer">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_VHx6UC_9Ee-eOYEADm-lRw" name="cotacao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Cotacao"/>
+              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_ewk8IDCjEe-h3-8-f_7Vvw" name="cotacao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Cotacao"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_QUDFky_9Ee-eOYEADm-lRw" type="ASSIGNMENT"/>
           </operations>
@@ -1402,6 +1418,13 @@
       <data xmi:type="process:Data" xmi:id="_kqUPkDAHEe-eOYEADm-lRw" name="verificacaoTipoVenda" dataType="_o-4SjC8SEe-mE6baM17d3w">
         <defaultValue xmi:type="expression:Expression" xmi:id="_kqUPkTAHEe-eOYEADm-lRw" content="" returnType="java.lang.Boolean"/>
       </data>
+      <data xmi:type="process:Data" xmi:id="_zNIDYDCkEe-h3-8-f_7Vvw" name="oportunidadeVendaId" dataType="_o-4Sji8SEe-mE6baM17d3w">
+        <defaultValue xmi:type="expression:Expression" xmi:id="_zNIDYTCkEe-h3-8-f_7Vvw" name="oportunidadeVendaIdInput" content="oportunidadeVendaIdInput" type="TYPE_CONTRACT_INPUT" returnType="java.lang.Integer">
+          <referencedElements xmi:type="process:ContractInput" xmi:id="_0leWYDCkEe-h3-8-f_7Vvw" name="oportunidadeVendaIdInput" type="INTEGER">
+            <mapping xmi:type="process:ContractInputMapping" xmi:id="_0leWYTCkEe-h3-8-f_7Vvw"/>
+          </referencedElements>
+        </defaultValue>
+      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_DAnT_y8pEe-I_N4FEnk8ug" type="NONE">
         <targetForm xmi:type="expression:Expression" xmi:id="_DAnUAC8pEe-I_N4FEnk8ug" name="" content="" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -1473,7 +1496,11 @@
         <condition xmi:type="expression:Expression" xmi:id="_0PnC0jCeEe-h3-8-f_7Vvw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
       <actors xmi:type="process:Actor" xmi:id="_FjPu4C_QEe-eOYEADm-lRw" name="CRM" initiator="true"/>
-      <contract xmi:type="process:Contract" xmi:id="_DAnUAy8pEe-I_N4FEnk8ug"/>
+      <contract xmi:type="process:Contract" xmi:id="_DAnUAy8pEe-I_N4FEnk8ug">
+        <inputs xmi:type="process:ContractInput" xmi:id="_pp_gQDCkEe-h3-8-f_7Vvw" name="oportunidadeVendaIdInput" type="INTEGER">
+          <mapping xmi:type="process:ContractInputMapping" xmi:id="_pp_gQTCkEe-h3-8-f_7Vvw"/>
+        </inputs>
+      </contract>
       <searchIndexes xmi:type="process:SearchIndex" xmi:id="_DAnT8C8pEe-I_N4FEnk8ug">
         <name xmi:type="expression:Expression" xmi:id="_DAnT8S8pEe-I_N4FEnk8ug" content="" returnTypeFixed="true"/>
         <value xmi:type="expression:Expression" xmi:id="_DAnT8i8pEe-I_N4FEnk8ug" content="" returnTypeFixed="true"/>
@@ -1774,17 +1801,19 @@
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_LMM3cC_8Ee-eOYEADm-lRw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_LMM3ci_8Ee-eOYEADm-lRw" name="" content="" returnTypeFixed="true"/>
         </elements>
-        <elements xmi:type="process:Task" xmi:id="_-_yn4DCeEe-h3-8-f_7Vvw" name="Validar Regras" outgoing="_Tk1WUC_8Ee-eOYEADm-lRw" incoming="_S09Ymy_8Ee-eOYEADm-lRw" actor="_2aTYwDCeEe-h3-8-f_7Vvw">
+        <elements xmi:type="process:ServiceTask" xmi:id="_S09agDCqEe-h3-8-f_7Vvw" name="Validar Regras" outgoing="_Tk1WUC_8Ee-eOYEADm-lRw" incoming="_S09Ymy_8Ee-eOYEADm-lRw">
           <dynamicLabel xmi:type="expression:Expression" xmi:id="_S09YkS_8Ee-eOYEADm-lRw" name="" content="" returnTypeFixed="true"/>
           <dynamicDescription xmi:type="expression:Expression" xmi:id="_S09YkC_8Ee-eOYEADm-lRw" name="" content="" returnTypeFixed="true"/>
           <stepSummary xmi:type="expression:Expression" xmi:id="_S09Yki_8Ee-eOYEADm-lRw" name="" content="" returnTypeFixed="true"/>
+          <data xmi:type="process:Data" xmi:id="_FQgXADCqEe-h3-8-f_7Vvw" name="ok" dataType="_o-4SjC8SEe-mE6baM17d3w">
+            <defaultValue xmi:type="expression:Expression" xmi:id="_FQgXATCqEe-h3-8-f_7Vvw" content="" returnType="java.lang.Boolean"/>
+          </data>
           <operations xmi:type="expression:Operation" xmi:id="_dhVmQC_9Ee-eOYEADm-lRw">
-            <leftOperand xmi:type="expression:Expression" xmi:id="_dhVmQS_9Ee-eOYEADm-lRw" name="cotacao" content="cotacao" type="TYPE_VARIABLE" returnType="crm.Cotacao">
-              <referencedElements xmi:type="process:BusinessObjectData" xmi:id="_DrpdkDCgEe-h3-8-f_7Vvw" name="cotacao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Cotacao"/>
+            <leftOperand xmi:type="expression:Expression" xmi:id="_dhVmQS_9Ee-eOYEADm-lRw" name="ok" content="ok" type="TYPE_VARIABLE" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="process:Data" xmi:id="_FRl8IDCqEe-h3-8-f_7Vvw" name="ok" dataType="_o-4SjC8SEe-mE6baM17d3w"/>
             </leftOperand>
-            <rightOperand xmi:type="expression:Expression" xmi:id="_dhVmQi_9Ee-eOYEADm-lRw" name="newScript()" content="def cotacao = cotacaoDAO.findByPersistenceId(cotacaoInput?.id_cotacao)&#xD;&#xA;cotacao.setEstado_cotacao(&quot;Ativo&quot;)&#xD;&#xA;return cotacao" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.Cotacao">
-              <referencedElements xmi:type="process:ContractInput" xmi:id="_RnCaYDCgEe-h3-8-f_7Vvw" name="cotacaoInput" type="COMPLEX" createMode="false"/>
-              <referencedElements xmi:type="expression:Expression" xmi:id="_RnCaYTCgEe-h3-8-f_7Vvw" name="cotacaoDAO" content="cotacaoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.CotacaoDAO" returnTypeFixed="true"/>
+            <rightOperand xmi:type="expression:Expression" xmi:id="_dhVmQi_9Ee-eOYEADm-lRw" name="newScript()" content="def cotacoesList = cotacaoDAO.findAll()&#xD;&#xA;for (cotacao in cotacoesList) {&#xD;&#xA;&#x9;cotacao.estado_cotacao = &quot;Ativo&quot;&#xD;&#xA;}&#xD;&#xA;return true" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="java.lang.Boolean">
+              <referencedElements xmi:type="expression:Expression" xmi:id="_CgR1oDCrEe-h3-8-f_7Vvw" name="cotacaoDAO" content="cotacaoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.CotacaoDAO" returnTypeFixed="true"/>
             </rightOperand>
             <operator xmi:type="expression:Operator" xmi:id="_dhVmQy_9Ee-eOYEADm-lRw" type="ASSIGNMENT" expression="setEstado_cotacao">
               <inputTypes>java.lang.String</inputTypes>
@@ -1795,22 +1824,8 @@
           <cardinalityExpression xmi:type="expression:Expression" xmi:id="_S09YlS_8Ee-eOYEADm-lRw" name="" content="" returnType="java.lang.Integer" returnTypeFixed="true"/>
           <iteratorExpression xmi:type="expression:Expression" xmi:id="_S09Yly_8Ee-eOYEADm-lRw" name="multiInstanceIterator" content="multiInstanceIterator" type="MULTIINSTANCE_ITERATOR_TYPE" returnType="java.lang.Object" returnTypeFixed="true"/>
           <completionCondition xmi:type="expression:Expression" xmi:id="_S09Yli_8Ee-eOYEADm-lRw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
-          <formMapping xmi:type="process:FormMapping" xmi:id="_-_zO-TCeEe-h3-8-f_7Vvw">
-            <targetForm xmi:type="expression:Expression" xmi:id="_H5IAEDCfEe-h3-8-f_7Vvw" name="newForm1" content="e37f90cc-0812-446e-b8a5-f04814d733f7" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
-          </formMapping>
-          <contract xmi:type="process:Contract" xmi:id="_-_zO-DCeEe-h3-8-f_7Vvw">
-            <inputs xmi:type="process:ContractInput" xmi:id="_GWizADCfEe-h3-8-f_7Vvw" name="cotacaoInput" type="COMPLEX" dataReference="cotacao" createMode="false">
-              <inputs xmi:type="process:ContractInput" xmi:id="_GWizATCfEe-h3-8-f_7Vvw" name="id_cotacao" type="INTEGER" createMode="false"/>
-            </inputs>
-          </contract>
-          <expectedDuration xmi:type="expression:Expression" xmi:id="_-_zO-zCeEe-h3-8-f_7Vvw" name="" content="" returnType="java.lang.Long" returnTypeFixed="true"/>
         </elements>
       </elements>
-      <data xmi:type="process:BusinessObjectData" xmi:id="_ESuBsC_9Ee-eOYEADm-lRw" name="cotacao" dataType="_o-4SlC8SEe-mE6baM17d3w" className="crm.Cotacao">
-        <defaultValue xmi:type="expression:Expression" xmi:id="_ESuBsS_9Ee-eOYEADm-lRw" name="init_cotacao()" content="cotacaoDAO.findByPersistenceId(     )" interpreter="GROOVY" type="TYPE_READ_ONLY_SCRIPT" returnType="crm.Cotacao">
-          <referencedElements xmi:type="expression:Expression" xmi:id="_ESuBsi_9Ee-eOYEADm-lRw" name="cotacaoDAO" content="cotacaoDAO" type="TYPE_BUSINESS_OBJECT_DAO" returnType="crm.CotacaoDAO" returnTypeFixed="true"/>
-        </defaultValue>
-      </data>
       <formMapping xmi:type="process:FormMapping" xmi:id="_F09tAC_8Ee-eOYEADm-lRw">
         <targetForm xmi:type="expression:Expression" xmi:id="_F09tAS_8Ee-eOYEADm-lRw" name="checkCotacoesForm" content="c809a8ca-e810-4599-85e2-07fc53f3aa08" type="FORM_REFERENCE_TYPE" returnTypeFixed="true"/>
       </formMapping>
@@ -1821,11 +1836,11 @@
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_L1ynAS_8Ee-eOYEADm-lRw"/>
         <condition xmi:type="expression:Expression" xmi:id="_L1ynAi_8Ee-eOYEADm-lRw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_S09Ymy_8Ee-eOYEADm-lRw" target="_-_yn4DCeEe-h3-8-f_7Vvw" source="_KV8k4C_8Ee-eOYEADm-lRw">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_S09Ymy_8Ee-eOYEADm-lRw" target="_S09agDCqEe-h3-8-f_7Vvw" source="_KV8k4C_8Ee-eOYEADm-lRw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_S09_oC_8Ee-eOYEADm-lRw"/>
         <condition xmi:type="expression:Expression" xmi:id="_S09_oS_8Ee-eOYEADm-lRw" name="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
-      <connections xmi:type="process:SequenceFlow" xmi:id="_Tk1WUC_8Ee-eOYEADm-lRw" target="_KpiPQC_8Ee-eOYEADm-lRw" source="_-_yn4DCeEe-h3-8-f_7Vvw">
+      <connections xmi:type="process:SequenceFlow" xmi:id="_Tk1WUC_8Ee-eOYEADm-lRw" target="_KpiPQC_8Ee-eOYEADm-lRw" source="_S09agDCqEe-h3-8-f_7Vvw">
         <decisionTable xmi:type="decision:DecisionTable" xmi:id="_Tk1WUS_8Ee-eOYEADm-lRw"/>
         <condition xmi:type="expression:Expression" xmi:id="_Tk1WUi_8Ee-eOYEADm-lRw" name="" content="" returnType="java.lang.Boolean" returnTypeFixed="true"/>
       </connections>
@@ -2425,9 +2440,9 @@
               </children>
               <layoutConstraint xmi:type="notation:Bounds" xmi:id="_LMNegS_8Ee-eOYEADm-lRw" x="692" y="104"/>
             </children>
-            <children xmi:type="notation:Shape" xmi:id="_-_zO_DCeEe-h3-8-f_7Vvw" type="3005" element="_-_yn4DCeEe-h3-8-f_7Vvw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
-              <children xmi:type="notation:DecorationNode" xmi:id="_-_zO_jCeEe-h3-8-f_7Vvw" type="5005"/>
-              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_-_zO_TCeEe-h3-8-f_7Vvw" x="226" y="84" width="141" height="70"/>
+            <children xmi:type="notation:Shape" xmi:id="_S0-BmDCqEe-h3-8-f_7Vvw" type="3027" element="_S09agDCqEe-h3-8-f_7Vvw" fontName="Segoe UI" fillColor="14334392" lineColor="10710316">
+              <children xmi:type="notation:DecorationNode" xmi:id="_S0-ooDCqEe-h3-8-f_7Vvw" type="5017"/>
+              <layoutConstraint xmi:type="notation:Bounds" xmi:id="_S0-BmTCqEe-h3-8-f_7Vvw" x="226" y="83" width="140" height="68"/>
             </children>
           </children>
           <styles xmi:type="notation:DescriptionStyle" xmi:id="_beFYATCgEe-h3-8-f_7Vvw"/>
@@ -3050,14 +3065,14 @@
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_L1ynBS_8Ee-eOYEADm-lRw" points="[-7, 3, -241, 2]$[227, 14, -7, 13]"/>
       <sourceAnchor xmi:type="notation:IdentityAnchor" xmi:id="_L1z1IC_8Ee-eOYEADm-lRw" id="(1.0,0.8)"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_S09_oi_8Ee-eOYEADm-lRw" type="4001" element="_S09Ymy_8Ee-eOYEADm-lRw" source="_KV9zAC_8Ee-eOYEADm-lRw" target="_-_zO_DCeEe-h3-8-f_7Vvw" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_S09_oi_8Ee-eOYEADm-lRw" type="4001" element="_S09Ymy_8Ee-eOYEADm-lRw" source="_KV9zAC_8Ee-eOYEADm-lRw" target="_S0-BmDCqEe-h3-8-f_7Vvw" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_S09_pS_8Ee-eOYEADm-lRw" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_S09_pi_8Ee-eOYEADm-lRw" y="-10"/>
       </children>
       <styles xmi:type="notation:FontStyle" xmi:id="_S09_oy_8Ee-eOYEADm-lRw" fontName="Segoe UI"/>
       <bendpoints xmi:type="notation:RelativeBendpoints" xmi:id="_S09_pC_8Ee-eOYEADm-lRw" points="[0, 0, 0, 0]$[0, 0, 0, 0]"/>
     </edges>
-    <edges xmi:type="notation:Connector" xmi:id="_Tk19YC_8Ee-eOYEADm-lRw" type="4001" element="_Tk1WUC_8Ee-eOYEADm-lRw" source="_-_zO_DCeEe-h3-8-f_7Vvw" target="_KpjdYC_8Ee-eOYEADm-lRw" roundedBendpointsRadius="10" routing="Rectilinear">
+    <edges xmi:type="notation:Connector" xmi:id="_Tk19YC_8Ee-eOYEADm-lRw" type="4001" element="_Tk1WUC_8Ee-eOYEADm-lRw" source="_S0-BmDCqEe-h3-8-f_7Vvw" target="_KpjdYC_8Ee-eOYEADm-lRw" roundedBendpointsRadius="10" routing="Rectilinear">
       <children xmi:type="notation:DecorationNode" xmi:id="_Tk19Yy_8Ee-eOYEADm-lRw" type="6001">
         <layoutConstraint xmi:type="notation:Location" xmi:id="_Tk19ZC_8Ee-eOYEADm-lRw" y="-10"/>
       </children>
